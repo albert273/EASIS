@@ -35,24 +35,22 @@ function HeroPages({ page, title }) {
       { y: 0, opacity: 1, duration: 1.5, ease: "power2.out" } // Ending position (fully visible)
     );
   }, []);
-
+// sx={{marginLeft: "15%", marginX: {xs: "auto"}}}
   return (
     <Box
       sx={{
         maxWidth: "100%",
-        height: {xs: "50vh",md:"100vh"},
+        height: { xs: "50vh", md: "100vh" },
         position: "relative",
         zIndex: 1,
         backgroundColor: "#efeef3",
-        overflow: "hidden"
+        overflow: "hidden",
       }}
     >
       <Stack direction={"row"}>
-        <Stack
-          sx={{ marginLeft: {xs: "150px", md: "180px"}, marginTop: {xs: "150px", md: "180px"} }}
-          gap={3}
-          ref={textRef}
-        >
+        <Stack sx={{position: "relative"}}>
+
+          <Stack gap={3} ref={textRef} sx={{marginLeft: "110px", marginY: "auto",marginTop: {xs: "22vh",md: 'auto' }}} justifyContent={'center'} alignItems={'center'}>
           <Box
             sx={{
               padding: "8px 12px",
@@ -61,7 +59,7 @@ function HeroPages({ page, title }) {
               borderRadius: "50px",
               width: "200px",
               display: "inline-block",
-              marginLeft: "-20px"
+              marginLeft: "-20px",
             }}
           >
             <Typography
@@ -79,7 +77,7 @@ function HeroPages({ page, title }) {
           </Box>
           <Typography
             ref={textRef}
-            sx={{ fontSize: "50px", lineHeight: "60px", fontWeight: "bold" }}
+            sx={{ fontSize: {xs: "40px",md:"50px"}, lineHeight: "60px", fontWeight: "bold" }}
           >
             {title}
           </Typography>
@@ -101,29 +99,63 @@ function HeroPages({ page, title }) {
               {page}
             </Typography>
           </Stack>
-        </Stack>
-        <Box flexGrow={1} />
-        <Stack>
-          <Box sx={{ position: "absolute", top: 0, right: 0, display: {xs: "none", md: "block"} }}>
-            <Image loading="lazy" src={shape} width={675} alt="image1" height={675} />
-          </Box>
-          <Box sx={{ zIndex: 2, opacity: "40%", display: {xs: "none", md: "block"} }}>
-            <Image loading="lazy" src={backGroundBlue} width={680} alt="image2" height={680} />
-          </Box>
-          <Box sx={{ zIndex: 2, position: "absolute", top: 0, left: 0 }}>
-            <Image loading="lazy"
+          </Stack>
+          <Box sx={{ zIndex: 2, position: "absolute", top: 0, left:0}}>
+            <Image
+              loading="lazy"
               src={shape2}
-              width={"100%"}
+              width={400}
               alt="image3"
               height={"110%"}
-              style={{ width: "100%", height: "100vh" }}
+              style={{ height: "100vh" }}
+            />
+          </Box>
+        </Stack>
+        <Box flexGrow={1} sx={{display: {xs: 'none', md: "flex"}}}/>
+        <Stack sx={{display: {xs: 'none', md: "flex"}}}>
+          <Box
+            sx={{
+              position: "absolute",
+              top: 0,
+              right: 0,
+              display: { xs: "none", md: "block" },
+            }}
+          >
+            <Image
+              loading="lazy"
+              src={shape}
+              width={675}
+              alt="image1"
+              height={675}
             />
           </Box>
           <Box
-            sx={{ zIndex: 3, position: "absolute", bottom: -130, right: -190, display: {xs: "none", md: "block"} }}
+            sx={{
+              zIndex: 2,
+              opacity: "40%",
+              display: { xs: "none", md: "block" },
+            }}
+          >
+            <Image
+              loading="lazy"
+              src={backGroundBlue}
+              width={680}
+              alt="image2"
+              height={680}
+            />
+          </Box>
+          <Box
+            sx={{
+              zIndex: 3,
+              position: "absolute",
+              bottom: -130,
+              right: -190,
+              display: { xs: "none", md: "block" },
+            }}
             ref={truckRef}
           >
-            <Image loading="lazy"
+            <Image
+              loading="lazy"
               src={truck}
               width={"100%"}
               alt="image4"

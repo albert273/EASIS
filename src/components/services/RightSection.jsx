@@ -3,6 +3,7 @@ import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
+  Box,
   Stack,
   Typography,
 } from "@mui/material";
@@ -46,7 +47,7 @@ export default function RightSection() {
   };
   return (
     <Stack sx={{ width: "95%", marginX: "auto" }} gap={3}>
-      <div style={{ width: "100%", maxWidth: "920px" }}>
+      <Stack sx={{ width: "100%", maxWidth: "920px", marginX: "auto" }} justifyContent={'center'}>
         <Image
         loading="lazy"
           src={rightImg}
@@ -56,7 +57,7 @@ export default function RightSection() {
           height={510}
           style={{ borderRadius: "7px" }}
         />
-      </div>
+      </Stack>
       <Stack gap={1}>
         <Typography
           sx={{ fontWeight: "bold", fontSize: { xs: "30px", md: "40px" } }}

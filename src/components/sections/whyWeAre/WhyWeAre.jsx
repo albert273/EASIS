@@ -71,9 +71,9 @@ function WhyWeAre() {
       ref={sectionRef} // Attach the ref to the section
     >
       <Grid container spacing={4} alignItems="center">
-        <Grid item xs={12} md={6} ref={leftRef}>
-          <Stack spacing={3}>
-            <Stack direction="row" spacing={3}>
+        <Grid item xs={12} md={6} ref={leftRef} sx={{display: {xs: "none", md: "grid"}}}>
+          <Stack spacing={3} >
+            <Stack direction={{xs: "column", md:"row"}}spacing={3}>
               <Box
                 sx={{
                   position: "relative",
@@ -174,7 +174,7 @@ function WhyWeAre() {
                 </Box>
               </Box>
             </Stack>
-            <Stack direction="row" spacing={3}>
+            <Stack direction={{xs: "column", md:"row"}} spacing={3}>
               <Box
                 sx={{
                   position: "relative",

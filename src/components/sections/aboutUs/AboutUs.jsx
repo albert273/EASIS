@@ -85,7 +85,7 @@ export default function AboutUs() {
         });
       }
     });
-    const icon = iconRefs.current
+    const icon = iconRefs.current;
     // Cleanup event listeners on unmount
     return () => {
       icon.forEach((icon) => {
@@ -108,8 +108,6 @@ export default function AboutUs() {
             gsap.set(leftStatisticsRef.current, { x: "-100%", opacity: 0 });
             gsap.set(rightDataRef.current, { x: "100%", opacity: 0 });
             gsap.set(downImgRef.current, { y: "100%", opacity: 0 });
-
-
 
             // Play the animation when the section comes into view
             gsap.to(rightRef.current, {
@@ -153,7 +151,7 @@ export default function AboutUs() {
       },
       { threshold: 0.1 } // Adjust threshold as needed
     );
-    const sectionElement = sectionRef.current
+    const sectionElement = sectionRef.current;
 
     if (sectionElement) {
       observer.observe(sectionElement); // Observe the section
@@ -232,8 +230,10 @@ export default function AboutUs() {
             We pride ourselves on our global reach and local.
           </Typography>
         </Stack>
-        <Stack direction={{ xs: "column", lg: "row" }} gap={4}>
+        <Stack direction={{ xs: "column", lg: "row" }}             justifyContent={"center"}
+            alignItems={"center"} gap={4}>
           <Stack
+            justifyContent={"center"}
             alignItems={"center"}
             sx={{
               padding: "32px",
@@ -243,42 +243,43 @@ export default function AboutUs() {
             }}
             ref={leftStatisticsRef}
           >
-            {statistics.map((state, index) => (
-              <Box
-                key={state.id}
-                sx={{
-                  borderBottom:
-                    index === statistics.length - 1
-                      ? "none"
-                      : "1px solid #E3DDDB",
-                  paddingBottom: index === statistics.length - 1 ? "0" : "24px",
-                  marginBottom: "24px",
-                  alignItems: "center",
-                }}
-              >
-                <Typography
+              {statistics.map((state, index) => (
+                <Box
+                  key={state.id}
                   sx={{
-                    fontSize: "32px",
-                    lineHeight: "32px",
-                    transition: ".3s",
-                    paddingBottom: "12px",
-                    textAlign: "center",
-                    fontWeight: "bold",
+                    borderBottom:
+                      index === statistics.length - 1
+                        ? "none"
+                        : "1px solid #E3DDDB",
+                    paddingBottom:
+                      index === statistics.length - 1 ? "0" : "24px",
+                    marginBottom: "24px",
+                    alignItems: "center",
                   }}
                 >
-                  {state.number}
-                </Typography>
-                <Typography
-                  sx={{
-                    color: "#4A4A49",
-                    fontSize: "16px",
-                    lineHeight: "16px",
-                  }}
-                >
-                  {state.title}
-                </Typography>
-              </Box>
-            ))}
+                  <Typography
+                    sx={{
+                      fontSize: "32px",
+                      lineHeight: "32px",
+                      transition: ".3s",
+                      paddingBottom: "12px",
+                      textAlign: "center",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {state.number}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      color: "#4A4A49",
+                      fontSize: "16px",
+                      lineHeight: "16px",
+                    }}
+                  >
+                    {state.title}
+                  </Typography>
+                </Box>
+              ))}
           </Stack>
           <Stack
             justifyContent={"center"}
@@ -287,7 +288,7 @@ export default function AboutUs() {
             ref={downImgRef}
           >
             <Image
-            loading="lazy"
+              loading="lazy"
               src={img}
               alt="img"
               width={false}
@@ -302,44 +303,43 @@ export default function AboutUs() {
             />
           </Stack>
           <Stack
-            justifyContent={"space-around"}
+            justifyContent={"space-between"}
             ref={rightDataRef}
-            alignItems={'center'}
+            alignItems={"center"}
+            gap={{md: 8}}
           >
             {data.map((data, index) => (
               <Stack
                 direction={"row"}
                 key={data.id}
                 sx={{ paddingBottom: { xs: "20px", lg: "0" } }}
-                alignItems={'center'}
-
+                alignItems={"center"}
               >
                 <Stack>
-                <Box
-                  ref={(el) => (iconRefs.current[index] = el)}
-                  sx={{
-                    background: "#FFF2EC",
-                    borderRadius: "50%",
-                    padding: "20px", 
-                    marginRight: "24px",
-                    lineHeight: "70px",
-                    alignItems: "center",
-                    display: "flex",
-                    justifyContent: "center",
-                    transition: ".3s",
-                    color: "#FF7E43",
-                    "&:hover": {
-                      backgroundColor: "#FF7E43",
-                      color: "white",
-                    },
-                  }}
-                >
-                  {React.cloneElement(data.icon, {
-                    sx: { color: "inherit", fontSize: "2.2rem" },
-                  })}
-                </Box>
+                  <Box
+                    ref={(el) => (iconRefs.current[index] = el)}
+                    sx={{
+                      background: "#FFF2EC",
+                      borderRadius: "50%",
+                      padding: "20px",
+                      marginRight: "24px",
+                      lineHeight: "70px",
+                      alignItems: "center",
+                      display: "flex",
+                      justifyContent: "center",
+                      transition: ".3s",
+                      color: "#FF7E43",
+                      "&:hover": {
+                        backgroundColor: "#FF7E43",
+                        color: "white",
+                      },
+                    }}
+                  >
+                    {React.cloneElement(data.icon, {
+                      sx: { color: "inherit", fontSize: "2.2rem" },
+                    })}
+                  </Box>
                 </Stack>
-
 
                 <Stack gap={{ xs: 1, md: 2 }}>
                   <Typography

@@ -71,7 +71,7 @@ function AppBar({ setAppBar, isOpen, buttons, appBarRef }) {
         background: "white",
         height: "100%",
         position: "fixed",
-        zIndex: 1000,
+        zIndex: 100000,
         right: 0,
         top: 0,
         width: {
