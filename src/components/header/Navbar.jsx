@@ -1,11 +1,12 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import { Box, Button, Stack, Typography, useMediaQuery } from "@mui/material";
-import LanguageIcon from "@mui/icons-material/Language";
+import logo from "../../../public/logo.png";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import AppBar from "./AppBar";
 import Link from "next/link";
+import Image from "next/image";
 
 const buttons = [
   { id: "1", title: "Home", link: "/" },
@@ -56,17 +57,17 @@ const Navbar = () => {
       <Stack
         direction={"row"}
         sx={{
-          width: isScrolled ? "100%" : "80%", // Full width on scroll, smaller when not scrolled
-          paddingY: "12px",
+          width: { xs: "100%", sm: isScrolled ? "100%" : "85%" },
           backgroundColor: "#f8f9fa",
-          paddingX: isScrolled ? "-50px" : "24px",
+          paddingLeft: { xs: 0, sm: isScrolled ? "180px" : "30px" },
+          paddingRight: { xs: "20px", sm: isScrolled ? "60px" : "50px" },
           borderRadius: isScrolled ? "0" : "87px", // Rounded when not scrolled
           boxShadow: isScrolled
             ? "0px 4px 15px rgba(0, 0, 0, 0.1)"
             : "0px 4px 8px rgba(0, 0, 0, 0.05)",
           zIndex: 2999,
           position: "fixed",
-          top: isScrolled ? "0" : "24px", // Navbar at the top on scroll, below when not scrolled
+          top: { xs: 0, sm: isScrolled ? 0 : "24px" },
           left: 0,
           right: 0,
           marginX: "auto", // Center the navbar when smaller
@@ -75,6 +76,7 @@ const Navbar = () => {
         justifyContent={"space-between"}
         alignItems={"center"}
       >
+        <Link href={'/'}>
         <Stack
           direction={"row"}
           alignItems={"center"}
@@ -82,12 +84,12 @@ const Navbar = () => {
           sx={{ cursor: "pointer", marginLeft: isScrolled ? "8%" : 0 }}
         >
           <Box>
-            <LanguageIcon sx={{ color: "#FF5E14", fontSize: "2rem" }} />
+          <Image src={logo} alt="logo" width={90} height={80} />
+
           </Box>
-          <Typography sx={{ fontSize: "1.6rem", fontWeight: "bold" }}>
-            Cargon
-          </Typography>
         </Stack>
+        </Link>
+
 
         <Stack
           direction={"row"}
@@ -97,18 +99,17 @@ const Navbar = () => {
           {buttons.map((button) => (
             <Stack key={button.id} direction={"row"}>
               <Link href={button.link}>
-              <Typography
-                sx={{
-                  color: "#5A5D63",
-                  fontSize: "16px",
-                  "&:hover": { color: "black", cursor: "pointer" },
-                  transition: ".3s",
-                }}
-              >
-                {button.title}
-              </Typography>
+                <Typography
+                  sx={{
+                    color: "#5A5D63",
+                    fontSize: "16px",
+                    "&:hover": { color: "black", cursor: "pointer" },
+                    transition: ".3s",
+                  }}
+                >
+                  {button.title}
+                </Typography>
               </Link>
-
             </Stack>
           ))}
         </Stack>
@@ -124,7 +125,7 @@ const Navbar = () => {
             sx={{
               textTransform: "capitalize",
               borderRadius: "50px",
-              backgroundColor: "#FF5E14",
+              backgroundColor: "#303f9f",
               padding: "10px 16px",
               fontWeight: "bold",
               fontSize: "16ps",
@@ -140,7 +141,7 @@ const Navbar = () => {
                   lineHeight: "32",
                   marginLeft: "6px",
                   borderRadius: "50%",
-                  backgroundColor: "#ff7e43",
+                  backgroundColor: "#3f51b5",
                 }}
               />
             }

@@ -287,7 +287,7 @@ function Form({ onFormSubmit }) {
               variant="contained"
               sx={{
                 textTransform: "capitalize",
-                backgroundColor: "#FF5E14",
+                backgroundColor: "#303f9f",
                 padding: "14px 16px",
                 fontWeight: "bold",
                 fontSize: "26px",

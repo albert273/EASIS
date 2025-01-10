@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import shape from "../../../public/images/hero/ca-image-shape3.3.png";
 import backGroundBlue from "../../../public/images/hero/ca-shape3.3.png";
 import shape2 from "../../../public/images/hero/ca-contact-shape-1.1.png";
-import truck from "../../../public/images/hero/orangeTruck.png";
+import truck from "../../../public/images/hero/BlueTruck.png";
 import Image from "next/image";
 import { gsap } from "gsap";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -35,7 +35,6 @@ function HeroPages({ page, title }) {
       { y: 0, opacity: 1, duration: 1.5, ease: "power2.out" } // Ending position (fully visible)
     );
   }, []);
-// sx={{marginLeft: "15%", marginX: {xs: "auto"}}}
   return (
     <Box
       sx={{
@@ -48,59 +47,72 @@ function HeroPages({ page, title }) {
       }}
     >
       <Stack direction={"row"}>
-        <Stack sx={{position: "relative"}}>
-
-          <Stack gap={3} ref={textRef} sx={{marginLeft: "110px", marginY: "auto",marginTop: {xs: "22vh",md: 'auto' }}} justifyContent={'center'} alignItems={'center'}>
-          <Box
+        <Stack sx={{ position: "relative" }}>
+          <Stack
+            gap={3}
+            ref={textRef}
             sx={{
-              padding: "8px 12px",
-              backgroundColor: "#FFF2EC",
-              paddingLeft: "22px",
-              borderRadius: "50px",
-              width: "200px",
-              display: "inline-block",
-              marginLeft: "-20px",
+              marginLeft: "110px",
+              marginY: "auto",
+              marginTop: { xs: "22vh", md: "auto" },
             }}
+            justifyContent={"center"}
+            alignItems={"center"}
           >
-            <Typography
-              variant="subtitle1"
+            <Box
               sx={{
-                color: "#FF5E14",
-                borderLeft: "solid 4px #FF5E14",
-                paddingLeft: "16px",
-                fontSize: "14px",
+                padding: "8px 12px",
+                backgroundColor: "#e8eaf6",
+                paddingLeft: "22px",
+                borderRadius: "50px",
+                width: "200px",
+                display: "inline-block",
+                marginLeft: "-20px",
+              }}
+            >
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  color: "#303f9f",
+                  borderLeft: "solid 4px #303f9f",
+                  paddingLeft: "16px",
+                  fontSize: "14px",
+                  fontWeight: "bold",
+                }}
+              >
+                EASIS & Logistics
+              </Typography>
+            </Box>
+            <Typography
+              ref={textRef}
+              sx={{
+                fontSize: { xs: "30px", md: "50px" },
+                lineHeight: "60px",
                 fontWeight: "bold",
               }}
             >
-              Uni-Cargo & Logistics
+              {title}
             </Typography>
-          </Box>
-          <Typography
-            ref={textRef}
-            sx={{ fontSize: {xs: "40px",md:"50px"}, lineHeight: "60px", fontWeight: "bold" }}
-          >
-            {title}
-          </Typography>
-          <Stack direction={"row"} alignItems={"center"} gap={1}>
-            <Link href={"/"}>
+            <Stack direction={"row"} alignItems={"center"} gap={1}>
+              <Link href={"/"}>
+                <Typography
+                  ref={textRef}
+                  sx={{ fontWeight: 400, cursor: "pointer" }}
+                >
+                  Home
+                </Typography>
+              </Link>
+
+              <ArrowForwardIcon />
               <Typography
                 ref={textRef}
-                sx={{ fontWeight: 400, cursor: "pointer" }}
+                sx={{ fontWeight: "bold", color: "#303f9f", cursor: "pointer" }}
               >
-                Home
+                {page}
               </Typography>
-            </Link>
-
-            <ArrowForwardIcon />
-            <Typography
-              ref={textRef}
-              sx={{ fontWeight: "bold", color: "#FF5E14", cursor: "pointer" }}
-            >
-              {page}
-            </Typography>
+            </Stack>
           </Stack>
-          </Stack>
-          <Box sx={{ zIndex: 2, position: "absolute", top: 0, left:0}}>
+          <Box sx={{ zIndex: 2, position: "absolute", top: 0, left: 0 }}>
             <Image
               loading="lazy"
               src={shape2}
@@ -111,8 +123,8 @@ function HeroPages({ page, title }) {
             />
           </Box>
         </Stack>
-        <Box flexGrow={1} sx={{display: {xs: 'none', md: "flex"}}}/>
-        <Stack sx={{display: {xs: 'none', md: "flex"}}}>
+        <Box flexGrow={1} sx={{ display: { xs: "none", md: "flex" } }} />
+        <Stack sx={{ display: { xs: "none", md: "flex" } }}>
           <Box
             sx={{
               position: "absolute",
@@ -132,7 +144,6 @@ function HeroPages({ page, title }) {
           <Box
             sx={{
               zIndex: 2,
-              opacity: "40%",
               display: { xs: "none", md: "block" },
             }}
           >
@@ -149,7 +160,7 @@ function HeroPages({ page, title }) {
               zIndex: 3,
               position: "absolute",
               bottom: -130,
-              right: -190,
+              right: -160,
               display: { xs: "none", md: "block" },
             }}
             ref={truckRef}

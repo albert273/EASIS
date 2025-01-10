@@ -107,7 +107,6 @@ export default function Questions() {
     );
     const sectionElement = sectionRef.current;
 
-
     if (sectionElement) {
       observer.observe(sectionElement); // Observe the section
     }
@@ -129,25 +128,24 @@ export default function Questions() {
         width: { xs: "95%", md: "90%" },
       }}
       ref={sectionRef}
-
     >
       <Box
         sx={{
           padding: "8px 12px",
-          backgroundColor: "#FFF2EC",
+          backgroundColor: "#e8eaf6",
           paddingLeft: "22px",
           borderRadius: "50px",
           width: "180px",
           display: "start",
-          marginBottom: "20px"
+          marginBottom: "20px",
         }}
         ref={leftBoxRef}
       >
         <Typography
           variant="subtitle1"
           sx={{
-            color: "#FF5E14",
-            borderLeft: "solid 4px #FF5E14",
+            color: "#303f9f",
+            borderLeft: "solid 4px #303f9f",
             paddingLeft: "16px",
             fontSize: "14px",
             fontWeight: "bold",
@@ -179,7 +177,7 @@ export default function Questions() {
           </Typography>
           <Stack justifyContent={"center"}>
             <Image
-            loading="lazy"
+              loading="lazy"
               src={carImage}
               alt="carImage"
               width={false}
@@ -199,7 +197,7 @@ export default function Questions() {
               onChange={handleChange(item.id)}
               key={item.id}
               sx={{
-                backgroundColor: expanded === item.id ? "#FF5E14" : "#F5F1F1",
+                backgroundColor: expanded === item.id ? "#303f9f" : "#F5F1F1",
                 color: expanded === item.id ? "white" : "black",
                 transition: "background-color 0.3s ease",
                 boxShadow: "none",

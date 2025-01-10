@@ -87,7 +87,7 @@ function Testimonial() {
       },
       { threshold: 0.1 } // Adjust threshold as needed
     );
-      const sectionElement = sectionRef.current
+    const sectionElement = sectionRef.current;
     if (sectionElement) {
       observer.observe(sectionElement); // Observe the section
     }
@@ -148,7 +148,7 @@ function Testimonial() {
         setCurrentPage(nextPage);
       }, 500);
     }, 3000); // 3 seconds interval
-  
+
     return () => clearInterval(interval); // Cleanup on unmount
   }, [currentPage, messagesPerPage, Comments.length]); // Update when currentPage or messagesPerPage changes
 
@@ -174,7 +174,7 @@ function Testimonial() {
             <Box
               sx={{
                 padding: "8px 12px",
-                backgroundColor: "#fff2ec",
+                backgroundColor: "#e8eaf6",
                 paddingLeft: "22px",
                 borderRadius: "50px",
                 width: "170px",
@@ -184,8 +184,8 @@ function Testimonial() {
               <Typography
                 variant="subtitle1"
                 sx={{
-                  color: "#FF5E14",
-                  borderLeft: "solid 4px #FF5E14",
+                  color: "#303f9f",
+                  borderLeft: "solid 4px #303f9f",
                   paddingLeft: "16px",
                   fontSize: "14px",
                   fontWeight: 400,

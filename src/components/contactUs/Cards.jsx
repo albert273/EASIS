@@ -14,7 +14,7 @@ const contactItem = [
     icon: (
       <LocationOnIcon
         className="icon"
-        sx={{ fontSize: "2.4rem", color: "#FF5E14", transition: ".1s" }}
+        sx={{ fontSize: "2.4rem", color: "#303f9f", transition: ".1s" }}
       />
     ),
   },
@@ -25,7 +25,7 @@ const contactItem = [
     icon: (
       <LocalPhoneIcon
         className="icon"
-        sx={{ fontSize: "2.4rem", color: "#FF5E14", transition: ".1s" }}
+        sx={{ fontSize: "2.4rem", color: "#303f9f", transition: ".1s" }}
       />
     ),
   },
@@ -36,7 +36,7 @@ const contactItem = [
     icon: (
       <EmailIcon
         className="icon"
-        sx={{ fontSize: "2.4rem", color: "#FF5E14", transition: ".1s" }}
+        sx={{ fontSize: "2.4rem", color: "#303f9f", transition: ".1s" }}
       />
     ),
   },
@@ -62,7 +62,7 @@ export default function Cards() {
       },
       { threshold: 0.1 } // Adjust threshold as needed
     );
-    const sectionElement = sectionRef.current
+    const sectionElement = sectionRef.current;
     if (sectionElement) {
       observer.observe(sectionElement); // Observe the section
     }
@@ -95,10 +95,10 @@ export default function Cards() {
               borderRadius: "7px",
               boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
               "&:hover": {
-                backgroundColor: "#FF5E14",
+                backgroundColor: "#303f9f",
                 "& .icon": { color: "white" }, // Change icon color
                 "& .title": { color: "white" },
-                "& .box": { backgroundColor: "#ff8a65" },
+                "& .box": { backgroundColor: "#3f51b5" },
                 "& .subtitle": { color: "#f8f9fa" }, // Change title color
                 // Change title color
                 // Change title color
@@ -111,7 +111,7 @@ export default function Cards() {
               sx={{
                 padding: "15px",
                 borderRadius: "50%",
-                backgroundColor: "#ffccbc",
+                backgroundColor: "#e8eaf6",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",

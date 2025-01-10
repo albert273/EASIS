@@ -29,7 +29,14 @@ const otherLinks = [
 ];
 function Footer() {
   return (
-    <Stack sx={{ paddingTop: "30px", backgroundColor: "#FFEFE7", zIndex: 1000, marginTop: "40px" }}>
+    <Stack
+      sx={{
+        paddingTop: "30px",
+        backgroundColor: "#e8eaf6",
+        zIndex: 1000,
+        marginTop: "40px",
+      }}
+    >
       <Stack
         sx={{
           flexDirection: { xs: "column", lg: "row" },
@@ -42,9 +49,15 @@ function Footer() {
         }}
       >
         <Box>
-          <Typography sx={{ fontSize: "34px", fontWeight: "bold", width: {xs: "100%",md:"70%"}, textAlign: {xs: "center", md: "start"} }}>
-            Join Us Today And let Us Help 
-            You To Grow Your Business
+          <Typography
+            sx={{
+              fontSize: "34px",
+              fontWeight: "bold",
+              width: { xs: "100%", md: "70%" },
+              textAlign: { xs: "center", md: "start" },
+            }}
+          >
+            Join Us Today And let Us Help You To Grow Your Business
           </Typography>
         </Box>
         <Box>
@@ -53,7 +66,7 @@ function Footer() {
             sx={{
               textTransform: "capitalize",
               borderRadius: "50px",
-              backgroundColor: "#FF5E14",
+              backgroundColor: "#303f9f",
               padding: "10px 16px",
               fontWeight: "bold",
               fontSize: "16ps",
@@ -69,7 +82,7 @@ function Footer() {
                   lineHeight: "32",
                   marginLeft: "6px",
                   borderRadius: "50%",
-                  backgroundColor: "#ff7e43",
+                  backgroundColor: "#3f51b5",
                 }}
               />
             }
@@ -107,9 +120,9 @@ function Footer() {
           >
             <Stack gap={2}>
               <Stack direction={"row"} alignItems={"center"} gap={2}>
-                <LanguageIcon sx={{ color: "#FF5E14", fontSize: "2rem" }} />
+                <LanguageIcon sx={{ color: "#303f9f", fontSize: "2rem" }} />
                 <Typography sx={{ fontSize: "1.6rem", fontWeight: "bold" }}>
-                  Cargon
+                  EASIS
                 </Typography>
               </Stack>
               <Typography>
@@ -125,8 +138,8 @@ function Footer() {
                     justifyContent: "center", // Horizontal centering
                     height: "40px",
                     width: "40px",
-                    background: "#FFEFE7",
-                    color: "#FF5E14",
+                    background: "#e8eaf6",
+                    color: "#303f9f",
                     fontSize: "20px",
                     borderRadius: "50%",
                     marginRight: "16px",
@@ -136,7 +149,7 @@ function Footer() {
                 >
                   <FacebookIcon
                     sx={{
-                      color: "#FF5E14", // Fixed color code with '#'
+                      color: "#303f9f", // Fixed color code with '#'
                       fontSize: "20px",
                     }}
                   />
@@ -149,8 +162,8 @@ function Footer() {
                     justifyContent: "center", // Horizontal centering
                     height: "40px",
                     width: "40px",
-                    background: "#FFEFE7",
-                    color: "#FF5E14",
+                    background: "#e8eaf6",
+                    color: "#303f9f",
                     fontSize: "20px",
                     borderRadius: "50%",
                     marginRight: "16px",
@@ -160,7 +173,7 @@ function Footer() {
                 >
                   <XIcon
                     sx={{
-                      color: "#FF5E14", // Fixed color code with '#'
+                      color: "#303f9f", // Fixed color code with '#'
                       fontSize: "20px",
                     }}
                   />
@@ -173,8 +186,8 @@ function Footer() {
                     justifyContent: "center", // Horizontal centering
                     height: "40px",
                     width: "40px",
-                    background: "#FFEFE7",
-                    color: "#FF5E14",
+                    background: "#e8eaf6",
+                    color: "#303f9f",
                     fontSize: "20px",
                     borderRadius: "50%",
                     marginRight: "16px",
@@ -184,7 +197,7 @@ function Footer() {
                 >
                   <InstagramIcon
                     sx={{
-                      color: "#FF5E14", // Fixed color code with '#'
+                      color: "#303f9f", // Fixed color code with '#'
                       fontSize: "20px",
                     }}
                   />
@@ -197,8 +210,8 @@ function Footer() {
                     justifyContent: "center", // Horizontal centering
                     height: "40px",
                     width: "40px",
-                    background: "#FFEFE7",
-                    color: "#FF5E14",
+                    background: "#e8eaf6",
+                    color: "#303f9f",
                     fontSize: "20px",
                     borderRadius: "50%",
                     marginRight: "16px",
@@ -208,7 +221,7 @@ function Footer() {
                 >
                   <LinkedInIcon
                     sx={{
-                      color: "#FF5E14", // Fixed color code with '#'
+                      color: "#303f9f", // Fixed color code with '#'
                       fontSize: "20px",
                     }}
                   />
@@ -216,7 +229,7 @@ function Footer() {
               </Stack>
             </Stack>
 
-            <Stack gap={2} alignItems={'center'}>
+            <Stack gap={2} alignItems={"center"}>
               <Typography sx={{ fontSize: "1.2rem", fontWeight: "bold" }}>
                 Quick Links
               </Typography>
@@ -227,7 +240,7 @@ function Footer() {
                       sx={{
                         cursor: "pointer",
                         color: "#4A4A49",
-                        "&:hover": { color: "#FF5E14", paddingLeft: "5px" },
+                        "&:hover": { color: "#303f9f", paddingLeft: "5px" },
                         transition: "0.3s",
                       }}
                     >
@@ -237,7 +250,7 @@ function Footer() {
                 ))}
               </Stack>
             </Stack>
-            <Stack gap={2} alignItems={'center'}>
+            <Stack gap={2} alignItems={"center"}>
               <Typography sx={{ fontSize: "1.2rem", fontWeight: "bold" }}>
                 Other Links
               </Typography>
@@ -248,7 +261,7 @@ function Footer() {
                       sx={{
                         cursor: "pointer",
                         color: "#4A4A49",
-                        "&:hover": { color: "#FF5E14", paddingLeft: "5px" },
+                        "&:hover": { color: "#303f9f", paddingLeft: "5px" },
                         transition: "0.3s",
                       }}
                     >
@@ -271,7 +284,7 @@ function Footer() {
                   paddingBottom: "20px",
                 }}
               >
-                <FaxIcon sx={{ fontSize: "2rem", color: "#FF5E14" }} />
+                <FaxIcon sx={{ fontSize: "2rem", color: "#303f9f" }} />
                 <Stack>
                   <Typography
                     sx={{
@@ -284,7 +297,7 @@ function Footer() {
                   </Typography>
                   <Typography
                     sx={{
-                      "&:hover": { color: "#dd3333" },
+                      "&:hover": { color: "#303f9f", opacity:1 },
                       cursor: "pointer",
                       fontWeight: "bold",
                       color: "black",
@@ -304,13 +317,13 @@ function Footer() {
                   paddingBottom: "20px",
                 }}
               >
-                <AlarmOnIcon sx={{ fontSize: "2rem", color: "#FF5E14" }} />
+                <AlarmOnIcon sx={{ fontSize: "2rem", color: "#303f9f" }} />
                 <Stack>
                   <Typography
                     sx={{
                       color: "black",
                       textTransform: "capitalize",
-                      fontWeight: "bold"
+                      fontWeight: "bold",
                     }}
                   >
                     Working Hours
@@ -325,14 +338,14 @@ function Footer() {
 
               <Stack direction={"row"} gap={2}>
                 <AlternateEmailIcon
-                  sx={{ fontSize: "2rem", color: "#FF5E14" }}
+                  sx={{ fontSize: "2rem", color: "#303f9f" }}
                 />
                 <Stack>
                   <Typography
                     sx={{
                       color: "black",
                       textTransform: "capitalize",
-                      fontWeight: "bold"
+                      fontWeight: "bold",
                     }}
                   >
                     Send Us Email
@@ -340,10 +353,11 @@ function Footer() {
                   <Typography
                     sx={{
                       fontWeight: "bold",
-                      "&:hover": { color: "#dd3333" },
+                      "&:hover": { color: "#303f9f", opacity:1 },
                       cursor: "pointer",
                       fontSize: "1.1rem",
-                      color: "black", opacity: 0.7
+                      color: "black",
+                      opacity: 0.7,
                     }}
                   >
                     <a href="mailto:gm@uni-cargo.net">gm@uni-cargo.net</a>

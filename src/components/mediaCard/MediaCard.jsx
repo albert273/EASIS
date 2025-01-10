@@ -19,7 +19,7 @@ function MediaCard({ title, description, image, username }) {
   };
   return (
     <Stack
-    gap={2}
+      gap={2}
       sx={{
         width: "350px",
         padding: "15px 27px",
@@ -27,7 +27,7 @@ function MediaCard({ title, description, image, username }) {
         borderRadius: "7px",
         userSelect: "none",
         minHeight: "400px",
-        justifyContent: "space-around"
+        justifyContent: "space-around",
       }}
     >
       <Box sx={{ width: 200, display: "flex", alignItems: "center" }}>
@@ -37,7 +37,7 @@ function MediaCard({ title, description, image, username }) {
           readOnly
           precision={0.5}
           emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
-          sx={{ color: "#FF5E14" }}
+          sx={{ color: "#303f9f" }}
         />
         <Box sx={{ ml: 2 }}>{labels[5]}</Box>
       </Box>
@@ -51,9 +51,7 @@ function MediaCard({ title, description, image, username }) {
       >
         {title}
       </Typography>
-      <Typography
-        sx={{height: "30%", color: "#5A5D63" }}
-      >
+      <Typography sx={{ height: "30%", color: "#5A5D63" }}>
         {description}
       </Typography>
       <Stack
@@ -67,11 +65,11 @@ function MediaCard({ title, description, image, username }) {
           src={image}
           width={"60px"}
           height={"60px"}
-          style={{  border: "#0e47a1 solid 1px",borderRadius: "50%", }}
+          style={{ border: "#0e47a1 solid 1px", borderRadius: "50%" }}
         />
         <Typography
           sx={{
-            color: "#FF5E14",
+            color: "#303f9f",
             fontWeight: 600,
             display: "block",
           }}

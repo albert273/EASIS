@@ -47,9 +47,12 @@ export default function RightSection() {
   };
   return (
     <Stack sx={{ width: "95%", marginX: "auto" }} gap={3}>
-      <Stack sx={{ width: "100%", maxWidth: "920px", marginX: "auto" }} justifyContent={'center'}>
+      <Stack
+        sx={{ width: "100%", maxWidth: "920px", marginX: "auto" }}
+        justifyContent={"center"}
+      >
         <Image
-        loading="lazy"
+          loading="lazy"
           src={rightImg}
           alt="rightImg"
           layout="responsive"
@@ -102,7 +105,7 @@ export default function RightSection() {
             onChange={handleChange(item.id)}
             key={item.id}
             sx={{
-              backgroundColor: expanded === item.id ? "#FF5E14" : "#F5F1F1",
+              backgroundColor: expanded === item.id ? "#303f9f" : "#F5F1F1",
               color: expanded === item.id ? "white" : "black",
               transition: "background-color 0.3s ease",
               boxShadow: "none",
@@ -186,10 +189,10 @@ export default function RightSection() {
                 sx={{
                   padding: "2px",
                   borderRadius: "50px",
-                  backgroundColor: "#fff2ec",
+                  backgroundColor: "#e8eaf6",
                   height: "20px",
                   width: "20px",
-                  color: "#ff7e43",
+                  color: "#3f51b5",
                 }}
               />
               <Typography

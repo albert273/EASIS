@@ -46,7 +46,7 @@ function OurServices() {
       },
       { threshold: 0.1 } // Adjust threshold as needed
     );
-    const sectionElement = sectionRef.current
+    const sectionElement = sectionRef.current;
     if (sectionElement) {
       observer.observe(sectionElement); // Observe the section
     }
@@ -98,7 +98,13 @@ function OurServices() {
         }}
         ref={animation1Ref}
       >
-        <Image loading="lazy" src={animation1} width={200} height={200} alt="animation1" />
+        <Image
+          loading="lazy"
+          src={animation1}
+          width={200}
+          height={200}
+          alt="animation1"
+        />
       </Box>
       <Container
         maxWidth={false}
@@ -110,7 +116,7 @@ function OurServices() {
             <Box
               sx={{
                 padding: "8px 12px",
-                backgroundColor: "#fff2ec",
+                backgroundColor: "#e8eaf6",
                 paddingLeft: "22px",
                 borderRadius: "50px",
                 width: "150px",
@@ -120,11 +126,11 @@ function OurServices() {
               <Typography
                 variant="subtitle1"
                 sx={{
-                  color: "#FF5E14",
-                  borderLeft: "solid 4px #FF5E14",
+                  color: "#303f9f",
+                  borderLeft: "solid 4px #303f9f",
                   paddingLeft: "16px",
                   fontSize: "14px",
-                  fontWeight: 400,
+                  fontWeight: "bold",
                 }}
               >
                 Our Service
@@ -158,7 +164,7 @@ function OurServices() {
           </Stack>
 
           <Stack
-            direction={{xs: "column",md:"row"}}
+            direction={{ xs: "column", md: "row" }}
             gap={1}
             justifyContent={"center"}
             sx={{ zIndex: 4 }}
@@ -178,11 +184,11 @@ function OurServices() {
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
                   position: "relative",
-                  background: "#FF5E14",
+                  background: "#303f9f",
                   overflow: "hidden",
                   transition: "all 0.5s",
                   "&:hover .hoverContent": {
-                    width: "100%", // Full width on hover
+                    width: "102%", // Full width on hover
                     opacity: 1, // Make it visible on hover
                   },
                   "&:hover": {
@@ -191,7 +197,8 @@ function OurServices() {
                   },
                 }}
               >
-                <Image loading="lazy"
+                <Image
+                  loading="lazy"
                   src={image.img}
                   alt={image.title}
                   style={{ maxWidth: "100%", objectFit: "cover" }}
@@ -204,7 +211,7 @@ function OurServices() {
                     top: 0,
                     height: "105%",
                     width: "0%", // Initially starts at 0 width (hidden)
-                    backgroundColor: "#FF5E14", // Semi-transparent background
+                    backgroundColor: "#303f9f", // Semi-transparent background
                     transition: "width 0.3s ease, opacity 0.3s ease", // Smooth transition
                     zIndex: 99,
                     opacity: 0, // Initially hidden
@@ -221,7 +228,7 @@ function OurServices() {
                       color: "white",
                       width: "70px",
                       height: "70px",
-                      backgroundColor: "#ff8a65",
+                      backgroundColor: "#3f51b5",
                       borderRadius: "50px",
                       lineHeight: "65px",
                       textAlign: "center",
@@ -276,7 +283,13 @@ function OurServices() {
         }}
         ref={animation2Ref}
       >
-        <Image loading="lazy" src={animation2} width={120} height={120} alt="animation2" />
+        <Image
+          loading="lazy"
+          src={animation2}
+          width={120}
+          height={120}
+          alt="animation2"
+        />
       </Box>
     </Box>
   );

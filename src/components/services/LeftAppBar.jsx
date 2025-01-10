@@ -78,13 +78,11 @@ const blogs = [
 export default function LeftAppBar() {
   const [expanded, setExpanded] = useState(questions[0].id); // Set the first accordion open by default
 
-
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
   return (
-    <Stack sx={{ backgroundColor: "white"}} gap={4}>
-    
+    <Stack sx={{ backgroundColor: "white" }} gap={4}>
       <Stack
         sx={{
           backgroundColor: "#F8F9FA",
@@ -106,7 +104,7 @@ export default function LeftAppBar() {
               onChange={handleChange(item.id)}
               key={item.id}
               sx={{
-                backgroundColor: expanded === item.id ? "#FF5E14" : "#F5F1F1",
+                backgroundColor: expanded === item.id ? "#303f9f" : "#F5F1F1",
                 color: expanded === item.id ? "white" : "black",
                 transition: "background-color 0.3s ease",
                 boxShadow: "none",
@@ -155,7 +153,7 @@ export default function LeftAppBar() {
           sx={{
             textTransform: "capitalize",
             borderRadius: "50px",
-            backgroundColor: "#FF5E14",
+            backgroundColor: "#303f9f",
             padding: "10px 14px",
             fontWeight: "bold",
             fontSize: "16px",
@@ -170,7 +168,7 @@ export default function LeftAppBar() {
                 width: "35px",
                 height: "35px",
                 borderRadius: "50%",
-                backgroundColor: "#ff7e43",
+                backgroundColor: "#3f51b5",
                 color: "white",
                 padding: "5px",
               }}
@@ -198,7 +196,7 @@ export default function LeftAppBar() {
           {blogs.map((item) => (
             <Stack gap={2} key={item.id} direction={"row"}>
               <Image
-              loading="lazy"
+                loading="lazy"
                 src={item.Image}
                 alt={item.titleImg}
                 width={100}
@@ -242,14 +240,14 @@ export default function LeftAppBar() {
               justifyContent: "center", // Horizontal centering
               height: "50px",
               width: "50px",
-              background: "#FFEFE7",
-              color: "#FF5E14",
+              background: "#e8eaf6",
+              color: "#303f9f",
               borderRadius: "50%",
               marginRight: "16px",
               transition: ".3s",
               cursor: "pointer",
               "&:hover": {
-                backgroundColor: "#ff5e14",
+                backgroundColor: "#303f9f",
                 color: "#FFFFFF", // Change text color to white on hover
               },
             }}
@@ -270,14 +268,14 @@ export default function LeftAppBar() {
               justifyContent: "center", // Horizontal centering
               height: "50px",
               width: "50px",
-              background: "#FFEFE7",
-              color: "#FF5E14",
+              background: "#e8eaf6",
+              color: "#303f9f",
               borderRadius: "50%",
               marginRight: "16px",
               transition: ".3s",
               cursor: "pointer",
               "&:hover": {
-                backgroundColor: "#ff5e14",
+                backgroundColor: "#303f9f",
                 color: "#FFFFFF", // Change text color to white on hover
               },
             }}
@@ -298,14 +296,14 @@ export default function LeftAppBar() {
               justifyContent: "center", // Horizontal centering
               height: "50px",
               width: "50px",
-              background: "#FFEFE7",
-              color: "#FF5E14",
+              background: "#e8eaf6",
+              color: "#303f9f",
               borderRadius: "50%",
               marginRight: "16px",
               transition: ".3s",
               cursor: "pointer",
               "&:hover": {
-                backgroundColor: "#ff5e14",
+                backgroundColor: "#303f9f",
                 color: "#FFFFFF", // Change text color to white on hover
               },
             }}
@@ -326,14 +324,14 @@ export default function LeftAppBar() {
               justifyContent: "center", // Horizontal centering
               height: "50px",
               width: "50px",
-              background: "#FFEFE7",
-              color: "#FF5E14",
+              background: "#e8eaf6",
+              color: "#303f9f",
               borderRadius: "50%",
               marginRight: "16px",
               transition: ".3s",
               cursor: "pointer",
               "&:hover": {
-                backgroundColor: "#ff5e14",
+                backgroundColor: "#303f9f",
                 color: "#FFFFFF", // Change text color to white on hover
               },
             }}

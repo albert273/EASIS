@@ -39,7 +39,7 @@ export default function WhatWeDo() {
       },
       { threshold: 0.1 } // Adjust threshold as needed
     );
-    const sectionElement = sectionRef.current
+    const sectionElement = sectionRef.current;
     if (sectionElement) {
       observer.observe(sectionElement); // Observe the section
     }
@@ -64,12 +64,12 @@ export default function WhatWeDo() {
             gap={1}
             sx={{
               padding: "40px",
-              backgroundColor: "#FF5E14",
+              backgroundColor: "#303f9f",
               color: "white",
               position: "absolute",
               top: 150,
               right: -40,
-              display: {xs: "none", md: "flex"}
+              display: { xs: "none", md: "flex" },
             }}
           >
             <UnarchiveSharpIcon sx={{ fontSize: "4.5rem" }} />
@@ -84,15 +84,15 @@ export default function WhatWeDo() {
           </Stack>
           <Box
             sx={{
-              width: { xs: 380,  md: 500 }, // Adjust widths for breakpoints
+              width: { xs: 380, md: 500 }, // Adjust widths for breakpoints
               height: { xs: 380, md: 500 }, // Adjust heights for breakpoints
               borderRadius: "7px",
               overflow: "hidden",
-              marginX: "auto" // Ensures the image respects the border radius
+              marginX: "auto", // Ensures the image respects the border radius
             }}
           >
             <Image
-            loading="lazy"
+              loading="lazy"
               src={img}
               alt="Transport"
               layout="responsive"
@@ -105,7 +105,7 @@ export default function WhatWeDo() {
           <Box
             sx={{
               padding: "8px 12px",
-              backgroundColor: "#FFF2EC",
+              backgroundColor: "#e8eaf6",
               paddingLeft: "22px",
               borderRadius: "50px",
               width: "140px",
@@ -116,8 +116,8 @@ export default function WhatWeDo() {
             <Typography
               variant="subtitle1"
               sx={{
-                color: "#FF5E14",
-                borderLeft: "solid 4px #FF5E14",
+                color: "#303f9f",
+                borderLeft: "solid 4px #303f9f",
                 paddingLeft: "16px",
                 fontSize: "14px",
                 fontWeight: "bold",
@@ -148,10 +148,10 @@ export default function WhatWeDo() {
                   sx={{
                     padding: "2px",
                     borderRadius: "50px",
-                    backgroundColor: "#fff2ec",
+                    backgroundColor: "#e8eaf6",
                     height: "20px",
                     width: "20px",
-                    color: "#ff7e43",
+                    color: "#3f51b5",
                   }}
                 />
                 <Typography

@@ -10,7 +10,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import img1 from "../../../public/images/hero/hero1.png";
-import img2 from "../../../public/images/hero/her-2-shape.png";
+import img2 from "../../../public/images/hero/truck-hero-1.jpg";
 import img3 from "../../../public/images/hero/hero1-shape.png";
 import Image from "next/image";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
@@ -66,7 +66,7 @@ function Hero2() {
       },
       { threshold: 0.1 } // Adjust threshold as needed
     );
-    const sectionElement = sectionRef.current
+    const sectionElement = sectionRef.current;
     if (sectionElement) {
       observer.observe(sectionElement); // Observe the section
     }
@@ -139,10 +139,10 @@ function Hero2() {
           <Box
             sx={{
               padding: "8px 12px",
-              backgroundColor: "#fff2ec2e",
+              backgroundColor: "#e8eaf62e",
               paddingLeft: "22px",
               borderRadius: "50px",
-              width: "250px",
+              width: "200px",
             }}
             ref={topRef}
           >
@@ -150,11 +150,11 @@ function Hero2() {
               variant="subtitle1"
               sx={{
                 color: "#fff",
-                borderLeft: "solid 4px #FF5E14",
+                borderLeft: "solid 4px #303f9f",
                 paddingLeft: "16px",
               }}
             >
-              Uni-Cargo & Logistics
+              EASIS & Logistics
             </Typography>
           </Box>
           <Typography
@@ -182,7 +182,7 @@ function Hero2() {
               sx={{
                 textTransform: "capitalize",
                 borderRadius: "50px",
-                backgroundColor: "#FF5E14",
+                backgroundColor: "#303f9f",
                 padding: "10px 16px",
                 fontWeight: "bold",
                 fontSize: "16ps",
@@ -198,7 +198,7 @@ function Hero2() {
                     lineHeight: "32",
                     marginLeft: "6px",
                     borderRadius: "50%",
-                    backgroundColor: "#FF5E14",
+                    backgroundColor: "#303f9f",
                   }}
                 />
               }
@@ -209,7 +209,7 @@ function Hero2() {
               variant="contained"
               sx={{
                 textTransform: "capitalize",
-                color: "#FF5E14",
+                color: "#303f9f",
                 borderRadius: "50px",
                 backgroundColor: "#efeef3",
                 padding: "10px 16px",
@@ -217,8 +217,8 @@ function Hero2() {
                 fontSize: "16ps",
                 lineHeight: "16px",
                 transition: ".3s",
-                border: "1px solid #FF5E14",
-                "&:hover": { backgroundColor: "#FF5E14", color: "white" },
+                border: "1px solid #303f9f",
+                "&:hover": { backgroundColor: "#303f9f", color: "white" },
               }}
               endIcon={
                 <KeyboardArrowRightIcon
@@ -228,7 +228,7 @@ function Hero2() {
                     lineHeight: "32",
                     marginLeft: "6px",
                     borderRadius: "50%",
-                    backgroundColor: "#FF5E14",
+                    backgroundColor: "#303f9f",
                     color: "white",
                   }}
                 />
@@ -251,12 +251,12 @@ function Hero2() {
           />
         </Box>
       </Stack>
-      <Stack sx={{ position: "absolute", zIndex: 1, top: 0, right: 0 }}>
+      <Stack sx={{ position: "absolute", zIndex: 1, bottom: 0, right: 0 }}>
         <Image
           loading="lazy"
           src={img2}
           alt="hero"
-          width={700}
+          width={850}
           height={670}
           ref={img2Ref} // Reference for animation
         />

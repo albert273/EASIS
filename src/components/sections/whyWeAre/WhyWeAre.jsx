@@ -45,7 +45,7 @@ function WhyWeAre() {
       },
       { threshold: 0.1 } // Adjust threshold as needed
     );
-    const sectionElement = sectionRef.current
+    const sectionElement = sectionRef.current;
 
     if (sectionElement) {
       observer.observe(sectionElement); // Observe the section
@@ -71,9 +71,15 @@ function WhyWeAre() {
       ref={sectionRef} // Attach the ref to the section
     >
       <Grid container spacing={4} alignItems="center">
-        <Grid item xs={12} md={6} ref={leftRef} sx={{display: {xs: "none", md: "grid"}}}>
-          <Stack spacing={3} >
-            <Stack direction={{xs: "column", md:"row"}}spacing={3}>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          ref={leftRef}
+          sx={{ display: { xs: "none", md: "grid" } }}
+        >
+          <Stack spacing={3}>
+            <Stack direction={{ xs: "column", md: "row" }} spacing={3}>
               <Box
                 sx={{
                   position: "relative",
@@ -86,7 +92,8 @@ function WhyWeAre() {
                   },
                 }}
               >
-                <Image loading="lazy"
+                <Image
+                  loading="lazy"
                   src={image1} // replace with your actual image path
                   width={220}
                   height={220}
@@ -101,7 +108,7 @@ function WhyWeAre() {
                     top: 0,
                     height: "100%",
                     width: "0%", // Initially starts at 0 width (hidden)
-                    backgroundColor: "#FF5E14", // Semi-transparent background
+                    backgroundColor: "#303f9f", // Semi-transparent background
                     transition: "width 0.3s ease, opacity 0.5s ease", // Smooth transition
                     zIndex: 99,
                     opacity: 0, // Initially hidden
@@ -136,7 +143,8 @@ function WhyWeAre() {
                   },
                 }}
               >
-                <Image loading="lazy"
+                <Image
+                  loading="lazy"
                   src={image2} // replace with your actual image path
                   width={220}
                   height={220}
@@ -151,7 +159,7 @@ function WhyWeAre() {
                     top: 0,
                     height: "100%",
                     width: "0%", // Initially starts at 0 width (hidden)
-                    backgroundColor: "#FF5E14", // Semi-transparent background
+                    backgroundColor: "#303f9f", // Semi-transparent background
                     transition: "width 0.3s ease, opacity 0.5s ease", // Smooth transition
                     zIndex: 99,
                     opacity: 0, // Initially hidden
@@ -174,7 +182,7 @@ function WhyWeAre() {
                 </Box>
               </Box>
             </Stack>
-            <Stack direction={{xs: "column", md:"row"}} spacing={3}>
+            <Stack direction={{ xs: "column", md: "row" }} spacing={3}>
               <Box
                 sx={{
                   position: "relative",
@@ -187,7 +195,8 @@ function WhyWeAre() {
                   },
                 }}
               >
-                <Image loading="lazy"
+                <Image
+                  loading="lazy"
                   src={image3} // replace with your actual image path
                   width={220}
                   height={220}
@@ -202,7 +211,7 @@ function WhyWeAre() {
                     top: 0,
                     height: "100%",
                     width: "0%", // Initially starts at 0 width (hidden)
-                    backgroundColor: "#FF5E14", // Semi-transparent background
+                    backgroundColor: "#303f9f", // Semi-transparent background
                     transition: "width 0.3s ease, opacity 0.5s ease", // Smooth transition
                     zIndex: 99,
                     opacity: 0, // Initially hidden
@@ -236,7 +245,8 @@ function WhyWeAre() {
                   },
                 }}
               >
-                <Image loading="lazy"
+                <Image
+                  loading="lazy"
                   src={image4} // replace with your actual image path
                   width={220}
                   height={220}
@@ -251,7 +261,7 @@ function WhyWeAre() {
                     top: 0,
                     height: "100%",
                     width: "0%", // Initially starts at 0 width (hidden)
-                    backgroundColor: "#FF5E14", // Semi-transparent background
+                    backgroundColor: "#303f9f", // Semi-transparent background
                     transition: "width 0.3s ease, opacity 0.5s ease", // Smooth transition
                     zIndex: 99,
                     opacity: 0, // Initially hidden
@@ -282,7 +292,7 @@ function WhyWeAre() {
             <Box
               sx={{
                 padding: "8px 12px",
-                backgroundColor: "#FFF2EC",
+                backgroundColor: "#e8eaf6",
                 paddingLeft: "22px",
                 borderRadius: "50px",
                 width: "150px",
@@ -291,8 +301,8 @@ function WhyWeAre() {
               <Typography
                 variant="subtitle1"
                 sx={{
-                  color: "#ff7e43",
-                  borderLeft: "solid 4px #ff7e43",
+                  color: "#303f9f",
+                  borderLeft: "solid 4px #303f9f",
                   paddingLeft: "16px",
                   fontSize: "14px",
                   fontWeight: "bold",
@@ -328,10 +338,10 @@ function WhyWeAre() {
                     sx={{
                       padding: "2px",
                       borderRadius: "50px",
-                      backgroundColor: "#fff2ec",
+                      backgroundColor: "#e8eaf6",
                       height: "20px",
                       width: "20px",
-                      color: "#ff7e43",
+                      color: "#303f9f",
                     }}
                   />
                   <Typography
@@ -357,7 +367,7 @@ function WhyWeAre() {
                 "&::after": {
                   content: '""',
                   position: "absolute",
-                  background: "#ff7e43",
+                  background: "#303f9f",
                   borderRadius: "5px",
                   height: "100%",
                   width: "6px",
@@ -377,13 +387,13 @@ function WhyWeAre() {
                 invested in your success.
               </Typography>
             </Box>
-            <Link href={'/AboutUs'}>
+            <Link href={"/AboutUs"}>
               <Button
                 variant="contained"
                 sx={{
                   textTransform: "capitalize",
                   borderRadius: "50px",
-                  backgroundColor: "#FF5E14",
+                  backgroundColor: "#303f9f",
                   padding: "10px 16px",
                   fontWeight: "bold",
                   fontSize: "16ps",
@@ -400,7 +410,7 @@ function WhyWeAre() {
                       lineHeight: "32",
                       marginLeft: "6px",
                       borderRadius: "50%",
-                      backgroundColor: "#ff7e43",
+                      backgroundColor: "#3f51b5",
                     }}
                   />
                 }

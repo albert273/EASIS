@@ -95,13 +95,13 @@ function AppBar({ setAppBar, isOpen, buttons, appBarRef }) {
             direction={"row"}
             alignItems={"center"}
             gap={1}
-            sx={{ cursor: "pointer", color: 'black'}}
+            sx={{ cursor: "pointer", color: "black" }}
           >
             <Box>
-              <LanguageIcon sx={{ fontSize: "2rem", color: '#FF5E14' }} />
+              <LanguageIcon sx={{ fontSize: "2rem", color: "#303f9f" }} />
             </Box>
             <Typography sx={{ fontSize: "1.6rem", fontWeight: "bold" }}>
-              Cargon
+              EASIS
             </Typography>
           </Stack>{" "}
         </Link>
@@ -126,7 +126,11 @@ function AppBar({ setAppBar, isOpen, buttons, appBarRef }) {
                   sx={{
                     color: "black",
                     fontSize: "18px",
-                    "&:hover": { color: "#dd3333", cursor: "pointer" },
+                    "&:hover": {
+                      color: "#303f9f",
+                      cursor: "pointer",
+                      opacity: 1,
+                    },
                     transition: ".3s",
                     fontWeight: "400",
                     display: "flex",
@@ -217,34 +221,34 @@ function AppBar({ setAppBar, isOpen, buttons, appBarRef }) {
       </Typography>
       <Stack direction={"row"} alignItems={"center"} sx={{ mb: "50px" }}>
         <Link href={"/pages/UserQuote"}>
-        <Button
-          variant="contained"
-          sx={{
-            textTransform: "capitalize",
-            borderRadius: "50px",
-            backgroundColor: "#FF5E14",
-            padding: "10px 16px",
-            fontWeight: "bold",
-            fontSize: "16ps",
-            lineHeight: "16px",
-            transition: ".3s",
-            "&:hover": { backgroundColor: "black" },
-          }}
-          endIcon={
-            <KeyboardArrowRightIcon
-              sx={{
-                height: "32px",
-                width: "32px",
-                lineHeight: "32",
-                marginLeft: "6px",
-                borderRadius: "50%",
-                backgroundColor: "#ff7e43",
-              }}
-            />
-          }
-        >
-          Get A Quote
-        </Button>
+          <Button
+            variant="contained"
+            sx={{
+              textTransform: "capitalize",
+              borderRadius: "50px",
+              backgroundColor: "#303f9f",
+              padding: "10px 16px",
+              fontWeight: "bold",
+              fontSize: "16ps",
+              lineHeight: "16px",
+              transition: ".3s",
+              "&:hover": { backgroundColor: "black" },
+            }}
+            endIcon={
+              <KeyboardArrowRightIcon
+                sx={{
+                  height: "32px",
+                  width: "32px",
+                  lineHeight: "32",
+                  marginLeft: "6px",
+                  borderRadius: "50%",
+                  backgroundColor: "#3f51b5",
+                }}
+              />
+            }
+          >
+            Get A Quote
+          </Button>
         </Link>
       </Stack>
       <Typography
