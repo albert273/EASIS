@@ -98,7 +98,7 @@ function AppBar({ setAppBar, isOpen, buttons, appBarRef }) {
             sx={{ cursor: "pointer", color: "black" }}
           >
             <Box>
-              <LanguageIcon sx={{ fontSize: "2rem", color: "#303f9f" }} />
+              <LanguageIcon sx={{ fontSize: "2rem", color: "#1a237e" }} />
             </Box>
             <Typography sx={{ fontSize: "1.6rem", fontWeight: "bold" }}>
               EASIS
@@ -127,7 +127,7 @@ function AppBar({ setAppBar, isOpen, buttons, appBarRef }) {
                     color: "black",
                     fontSize: "18px",
                     "&:hover": {
-                      color: "#303f9f",
+                      color: "#1a237e",
                       cursor: "pointer",
                       opacity: 1,
                     },
@@ -226,7 +226,7 @@ function AppBar({ setAppBar, isOpen, buttons, appBarRef }) {
             sx={{
               textTransform: "capitalize",
               borderRadius: "50px",
-              backgroundColor: "#303f9f",
+              backgroundColor: "#1a237e",
               padding: "10px 16px",
               fontWeight: "bold",
               fontSize: "16ps",

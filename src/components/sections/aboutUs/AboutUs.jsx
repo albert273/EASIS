@@ -189,8 +189,8 @@ export default function AboutUs() {
         <Typography
           variant="subtitle1"
           sx={{
-            color: "#303f9f",
-            borderLeft: "solid 4px #303f9f",
+            color: "#1a237e",
+            borderLeft: "solid 4px #1a237e",
             paddingLeft: "16px",
             fontSize: "14px",
             fontWeight: "bold",
@@ -331,9 +331,9 @@ export default function AboutUs() {
                       display: "flex",
                       justifyContent: "center",
                       transition: ".3s",
-                      color: "#303f9f",
+                      color: "#1a237e",
                       "&:hover": {
-                        backgroundColor: "#303f9f",
+                        backgroundColor: "#1a237e",
                         color: "white",
                       },
                     }}

@@ -76,20 +76,18 @@ const Navbar = () => {
         justifyContent={"space-between"}
         alignItems={"center"}
       >
-        <Link href={'/'}>
-        <Stack
-          direction={"row"}
-          alignItems={"center"}
-          gap={1}
-          sx={{ cursor: "pointer", marginLeft: isScrolled ? "8%" : 0 }}
-        >
-          <Box>
-          <Image src={logo} alt="logo" width={90} height={80} />
-
-          </Box>
-        </Stack>
+        <Link href={"/"}>
+          <Stack
+            direction={"row"}
+            alignItems={"center"}
+            gap={1}
+            sx={{ cursor: "pointer", marginLeft: isScrolled ? "8%" : 0 }}
+          >
+            <Box>
+              <Image src={logo} alt="logo" width={90} height={80} />
+            </Box>
+          </Stack>
         </Link>
-
 
         <Stack
           direction={"row"}
@@ -125,7 +123,7 @@ const Navbar = () => {
             sx={{
               textTransform: "capitalize",
               borderRadius: "50px",
-              backgroundColor: "#303f9f",
+              backgroundColor: "#1a237e",
               padding: "10px 16px",
               fontWeight: "bold",
               fontSize: "16ps",

@@ -104,7 +104,7 @@ export default function LeftAppBar() {
               onChange={handleChange(item.id)}
               key={item.id}
               sx={{
-                backgroundColor: expanded === item.id ? "#303f9f" : "#F5F1F1",
+                backgroundColor: expanded === item.id ? "#1a237e" : "#F5F1F1",
                 color: expanded === item.id ? "white" : "black",
                 transition: "background-color 0.3s ease",
                 boxShadow: "none",
@@ -153,7 +153,7 @@ export default function LeftAppBar() {
           sx={{
             textTransform: "capitalize",
             borderRadius: "50px",
-            backgroundColor: "#303f9f",
+            backgroundColor: "#1a237e",
             padding: "10px 14px",
             fontWeight: "bold",
             fontSize: "16px",
@@ -241,13 +241,13 @@ export default function LeftAppBar() {
               height: "50px",
               width: "50px",
               background: "#e8eaf6",
-              color: "#303f9f",
+              color: "#1a237e",
               borderRadius: "50%",
               marginRight: "16px",
               transition: ".3s",
               cursor: "pointer",
               "&:hover": {
-                backgroundColor: "#303f9f",
+                backgroundColor: "#1a237e",
                 color: "#FFFFFF", // Change text color to white on hover
               },
             }}
@@ -269,13 +269,13 @@ export default function LeftAppBar() {
               height: "50px",
               width: "50px",
               background: "#e8eaf6",
-              color: "#303f9f",
+              color: "#1a237e",
               borderRadius: "50%",
               marginRight: "16px",
               transition: ".3s",
               cursor: "pointer",
               "&:hover": {
-                backgroundColor: "#303f9f",
+                backgroundColor: "#1a237e",
                 color: "#FFFFFF", // Change text color to white on hover
               },
             }}
@@ -297,13 +297,13 @@ export default function LeftAppBar() {
               height: "50px",
               width: "50px",
               background: "#e8eaf6",
-              color: "#303f9f",
+              color: "#1a237e",
               borderRadius: "50%",
               marginRight: "16px",
               transition: ".3s",
               cursor: "pointer",
               "&:hover": {
-                backgroundColor: "#303f9f",
+                backgroundColor: "#1a237e",
                 color: "#FFFFFF", // Change text color to white on hover
               },
             }}
@@ -325,13 +325,13 @@ export default function LeftAppBar() {
               height: "50px",
               width: "50px",
               background: "#e8eaf6",
-              color: "#303f9f",
+              color: "#1a237e",
               borderRadius: "50%",
               marginRight: "16px",
               transition: ".3s",
               cursor: "pointer",
               "&:hover": {
-                backgroundColor: "#303f9f",
+                backgroundColor: "#1a237e",
                 color: "#FFFFFF", // Change text color to white on hover
               },
             }}

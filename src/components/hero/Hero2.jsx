@@ -14,6 +14,7 @@ import img2 from "../../../public/images/hero/truck-hero-1.jpg";
 import img3 from "../../../public/images/hero/hero1-shape.png";
 import Image from "next/image";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import Link from "next/link";
 
 function Hero2() {
   const img1Ref = useRef(null);
@@ -150,7 +151,7 @@ function Hero2() {
               variant="subtitle1"
               sx={{
                 color: "#fff",
-                borderLeft: "solid 4px #303f9f",
+                borderLeft: "solid 4px #1a237e",
                 paddingLeft: "16px",
               }}
             >
@@ -177,65 +178,70 @@ function Hero2() {
             handled with precision and care
           </Typography>
           <Stack direction={"row"} gap={2} ref={bottomRef}>
-            <Button
-              variant="contained"
-              sx={{
-                textTransform: "capitalize",
-                borderRadius: "50px",
-                backgroundColor: "#303f9f",
-                padding: "10px 16px",
-                fontWeight: "bold",
-                fontSize: "16ps",
-                lineHeight: "16px",
-                transition: ".3s",
-                "&:hover": { backgroundColor: "black" },
-              }}
-              endIcon={
-                <KeyboardArrowRightIcon
-                  sx={{
-                    height: "32px",
-                    width: "32px",
-                    lineHeight: "32",
-                    marginLeft: "6px",
-                    borderRadius: "50%",
-                    backgroundColor: "#303f9f",
-                  }}
-                />
-              }
-            >
-              Get Started
-            </Button>
-            <Button
-              variant="contained"
-              sx={{
-                textTransform: "capitalize",
-                color: "#303f9f",
-                borderRadius: "50px",
-                backgroundColor: "#efeef3",
-                padding: "10px 16px",
-                fontWeight: "bold",
-                fontSize: "16ps",
-                lineHeight: "16px",
-                transition: ".3s",
-                border: "1px solid #303f9f",
-                "&:hover": { backgroundColor: "#303f9f", color: "white" },
-              }}
-              endIcon={
-                <KeyboardArrowRightIcon
-                  sx={{
-                    height: "32px",
-                    width: "32px",
-                    lineHeight: "32",
-                    marginLeft: "6px",
-                    borderRadius: "50%",
-                    backgroundColor: "#303f9f",
-                    color: "white",
-                  }}
-                />
-              }
-            >
-              Discover more
-            </Button>
+            <Link href={"/MakeQuote"}>
+              <Button
+                variant="contained"
+                sx={{
+                  textTransform: "capitalize",
+                  borderRadius: "50px",
+                  backgroundColor: "#1a237e",
+                  padding: "10px 16px",
+                  fontWeight: "bold",
+                  fontSize: "16ps",
+                  lineHeight: "16px",
+                  transition: ".3s",
+                  "&:hover": { backgroundColor: "black" },
+                }}
+                endIcon={
+                  <KeyboardArrowRightIcon
+                    sx={{
+                      height: "32px",
+                      width: "32px",
+                      lineHeight: "32",
+                      marginLeft: "6px",
+                      borderRadius: "50%",
+                      backgroundColor: "#1a237e",
+                    }}
+                  />
+                }
+              >
+                Get Started
+              </Button>
+            </Link>
+
+            <Link href={"/"}>
+              <Button
+                variant="contained"
+                sx={{
+                  textTransform: "capitalize",
+                  color: "#1a237e",
+                  borderRadius: "50px",
+                  backgroundColor: "#efeef3",
+                  padding: "10px 16px",
+                  fontWeight: "bold",
+                  fontSize: "16ps",
+                  lineHeight: "16px",
+                  transition: ".3s",
+                  border: "1px solid #1a237e",
+                  "&:hover": { backgroundColor: "#1a237e", color: "white" },
+                }}
+                endIcon={
+                  <KeyboardArrowRightIcon
+                    sx={{
+                      height: "32px",
+                      width: "32px",
+                      lineHeight: "32",
+                      marginLeft: "6px",
+                      borderRadius: "50%",
+                      backgroundColor: "#1a237e",
+                      color: "white",
+                    }}
+                  />
+                }
+              >
+                Discover more
+              </Button>
+            </Link>
           </Stack>
         </Stack>
         <Box

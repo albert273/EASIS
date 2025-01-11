@@ -37,7 +37,7 @@ function MediaCard({ title, description, image, username }) {
           readOnly
           precision={0.5}
           emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
-          sx={{ color: "#303f9f" }}
+          sx={{ color: "#1a237e" }}
         />
         <Box sx={{ ml: 2 }}>{labels[5]}</Box>
       </Box>
@@ -69,7 +69,7 @@ function MediaCard({ title, description, image, username }) {
         />
         <Typography
           sx={{
-            color: "#303f9f",
+            color: "#1a237e",
             fontWeight: 600,
             display: "block",
           }}

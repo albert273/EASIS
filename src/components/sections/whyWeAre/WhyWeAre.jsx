@@ -108,7 +108,7 @@ function WhyWeAre() {
                     top: 0,
                     height: "100%",
                     width: "0%", // Initially starts at 0 width (hidden)
-                    backgroundColor: "#303f9f", // Semi-transparent background
+                    backgroundColor: "#1a237e", // Semi-transparent background
                     transition: "width 0.3s ease, opacity 0.5s ease", // Smooth transition
                     zIndex: 99,
                     opacity: 0, // Initially hidden
@@ -159,7 +159,7 @@ function WhyWeAre() {
                     top: 0,
                     height: "100%",
                     width: "0%", // Initially starts at 0 width (hidden)
-                    backgroundColor: "#303f9f", // Semi-transparent background
+                    backgroundColor: "#1a237e", // Semi-transparent background
                     transition: "width 0.3s ease, opacity 0.5s ease", // Smooth transition
                     zIndex: 99,
                     opacity: 0, // Initially hidden
@@ -211,7 +211,7 @@ function WhyWeAre() {
                     top: 0,
                     height: "100%",
                     width: "0%", // Initially starts at 0 width (hidden)
-                    backgroundColor: "#303f9f", // Semi-transparent background
+                    backgroundColor: "#1a237e", // Semi-transparent background
                     transition: "width 0.3s ease, opacity 0.5s ease", // Smooth transition
                     zIndex: 99,
                     opacity: 0, // Initially hidden
@@ -261,7 +261,7 @@ function WhyWeAre() {
                     top: 0,
                     height: "100%",
                     width: "0%", // Initially starts at 0 width (hidden)
-                    backgroundColor: "#303f9f", // Semi-transparent background
+                    backgroundColor: "#1a237e", // Semi-transparent background
                     transition: "width 0.3s ease, opacity 0.5s ease", // Smooth transition
                     zIndex: 99,
                     opacity: 0, // Initially hidden
@@ -301,8 +301,8 @@ function WhyWeAre() {
               <Typography
                 variant="subtitle1"
                 sx={{
-                  color: "#303f9f",
-                  borderLeft: "solid 4px #303f9f",
+                  color: "#1a237e",
+                  borderLeft: "solid 4px #1a237e",
                   paddingLeft: "16px",
                   fontSize: "14px",
                   fontWeight: "bold",
@@ -341,7 +341,7 @@ function WhyWeAre() {
                       backgroundColor: "#e8eaf6",
                       height: "20px",
                       width: "20px",
-                      color: "#303f9f",
+                      color: "#1a237e",
                     }}
                   />
                   <Typography
@@ -367,7 +367,7 @@ function WhyWeAre() {
                 "&::after": {
                   content: '""',
                   position: "absolute",
-                  background: "#303f9f",
+                  background: "#1a237e",
                   borderRadius: "5px",
                   height: "100%",
                   width: "6px",
@@ -393,7 +393,7 @@ function WhyWeAre() {
                 sx={{
                   textTransform: "capitalize",
                   borderRadius: "50px",
-                  backgroundColor: "#303f9f",
+                  backgroundColor: "#1a237e",
                   padding: "10px 16px",
                   fontWeight: "bold",
                   fontSize: "16ps",

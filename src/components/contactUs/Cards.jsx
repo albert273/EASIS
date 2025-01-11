@@ -14,7 +14,7 @@ const contactItem = [
     icon: (
       <LocationOnIcon
         className="icon"
-        sx={{ fontSize: "2.4rem", color: "#303f9f", transition: ".1s" }}
+        sx={{ fontSize: "2.4rem", color: "#1a237e", transition: ".1s" }}
       />
     ),
   },
@@ -25,7 +25,7 @@ const contactItem = [
     icon: (
       <LocalPhoneIcon
         className="icon"
-        sx={{ fontSize: "2.4rem", color: "#303f9f", transition: ".1s" }}
+        sx={{ fontSize: "2.4rem", color: "#1a237e", transition: ".1s" }}
       />
     ),
   },
@@ -36,7 +36,7 @@ const contactItem = [
     icon: (
       <EmailIcon
         className="icon"
-        sx={{ fontSize: "2.4rem", color: "#303f9f", transition: ".1s" }}
+        sx={{ fontSize: "2.4rem", color: "#1a237e", transition: ".1s" }}
       />
     ),
   },
@@ -95,7 +95,7 @@ export default function Cards() {
               borderRadius: "7px",
               boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
               "&:hover": {
-                backgroundColor: "#303f9f",
+                backgroundColor: "#1a237e",
                 "& .icon": { color: "white" }, // Change icon color
                 "& .title": { color: "white" },
                 "& .box": { backgroundColor: "#3f51b5" },

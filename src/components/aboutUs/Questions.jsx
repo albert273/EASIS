@@ -144,8 +144,8 @@ export default function Questions() {
         <Typography
           variant="subtitle1"
           sx={{
-            color: "#303f9f",
-            borderLeft: "solid 4px #303f9f",
+            color: "#1a237e",
+            borderLeft: "solid 4px #1a237e",
             paddingLeft: "16px",
             fontSize: "14px",
             fontWeight: "bold",
@@ -197,7 +197,7 @@ export default function Questions() {
               onChange={handleChange(item.id)}
               key={item.id}
               sx={{
-                backgroundColor: expanded === item.id ? "#303f9f" : "#F5F1F1",
+                backgroundColor: expanded === item.id ? "#1a237e" : "#F5F1F1",
                 color: expanded === item.id ? "white" : "black",
                 transition: "background-color 0.3s ease",
                 boxShadow: "none",

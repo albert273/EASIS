@@ -69,7 +69,7 @@ export default function ImageListComponents() {
             top: "100%", // Start at the bottom of the container
             height: "0%", // Initially hidden (height is 0%)
             width: "85%", // Cover the entire width
-            backgroundColor: "#303f9f", // Blue background
+            backgroundColor: "#1a237e", // Blue background
             transition: "height 0.3s ease, top 0.3s ease, opacity 0.5s ease", // Smooth transition
             zIndex: 99,
             opacity: 0, // Initially hidden
@@ -97,7 +97,7 @@ export default function ImageListComponents() {
               sx={{
                 fontSize: "2.6rem",
                 verticalAlign: "middle",
-                color: "#303f9f",
+                color: "#1a237e",
               }}
             />
           </Box>
@@ -196,7 +196,7 @@ export default function ImageListComponents() {
             top: "100%", // Start at the bottom of the container
             height: "0%", // Initially hidden (height is 0%)
             width: "85%", // Cover the entire width
-            backgroundColor: "#303f9f", // Blue background
+            backgroundColor: "#1a237e", // Blue background
             transition: "height 0.3s ease, top 0.3s ease, opacity 0.5s ease", // Smooth transition
             zIndex: 99,
             opacity: 0, // Initially hidden
@@ -224,7 +224,7 @@ export default function ImageListComponents() {
               sx={{
                 fontSize: "2.6rem",
                 verticalAlign: "middle",
-                color: "#303f9f",
+                color: "#1a237e",
               }}
             />
           </Box>
@@ -323,7 +323,7 @@ export default function ImageListComponents() {
             top: "100%", // Start at the bottom of the container
             height: "100%", // Initially hidden (height is 0%)
             width: "85%", // Cover the entire width
-            backgroundColor: "#303f9f", // Blue background
+            backgroundColor: "#1a237e", // Blue background
             transition: "height 0.3s ease, top 0.3s ease, opacity 0.5s ease", // Smooth transition
             zIndex: 99,
             opacity: 0, // Initially hidden
@@ -351,7 +351,7 @@ export default function ImageListComponents() {
               sx={{
                 fontSize: "2.6rem",
                 verticalAlign: "middle",
-                color: "#303f9f",
+                color: "#1a237e",
               }}
             />
           </Box>
@@ -450,7 +450,7 @@ export default function ImageListComponents() {
             top: "100%", // Start at the bottom of the container
             height: "100%", // Initially hidden (height is 0%)
             width: "85%", // Cover the entire width
-            backgroundColor: "#303f9f", // Blue background
+            backgroundColor: "#1a237e", // Blue background
             transition: "height 0.3s ease, top 0.3s ease, opacity 0.5s ease", // Smooth transition
             zIndex: 99,
             opacity: 0, // Initially hidden
@@ -478,7 +478,7 @@ export default function ImageListComponents() {
               sx={{
                 fontSize: "2.6rem",
                 verticalAlign: "middle",
-                color: "#303f9f",
+                color: "#1a237e",
               }}
             />
           </Box>
@@ -576,7 +576,7 @@ export default function ImageListComponents() {
             top: "100%", // Start at the bottom of the container
             height: "0%", // Initially hidden (height is 0%)
             width: "85%", // Cover the entire width
-            backgroundColor: "#303f9f", // Blue background
+            backgroundColor: "#1a237e", // Blue background
             transition: "height 0.3s ease, top 0.3s ease, opacity 0.5s ease", // Smooth transition
             zIndex: 99,
             opacity: 0, // Initially hidden
@@ -604,7 +604,7 @@ export default function ImageListComponents() {
               sx={{
                 fontSize: "2.6rem",
                 verticalAlign: "middle",
-                color: "#303f9f",
+                color: "#1a237e",
               }}
             />
           </Box>
@@ -703,7 +703,7 @@ export default function ImageListComponents() {
             top: "100%", // Start at the bottom of the container
             height: "0%", // Initially hidden (height is 0%)
             width: "85%", // Cover the entire width
-            backgroundColor: "#303f9f", // Blue background
+            backgroundColor: "#1a237e", // Blue background
             transition: "height 0.3s ease, top 0.3s ease, opacity 0.5s ease", // Smooth transition
             zIndex: 99,
             opacity: 0, // Initially hidden
@@ -731,7 +731,7 @@ export default function ImageListComponents() {
               sx={{
                 fontSize: "2.6rem",
                 verticalAlign: "middle",
-                color: "#303f9f",
+                color: "#1a237e",
               }}
             />
           </Box>

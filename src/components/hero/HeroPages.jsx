@@ -3,7 +3,7 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 import React, { useEffect, useRef } from "react";
 import shape from "../../../public/images/hero/ca-image-shape3.3.png";
 import backGroundBlue from "../../../public/images/hero/ca-shape3.3.png";
-import shape2 from "../../../public/images/hero/ca-contact-shape-1.1.png";
+import shape2 from "../../../public/images/hero/ca-shape3.1.png";
 import truck from "../../../public/images/hero/BlueTruck.png";
 import Image from "next/image";
 import { gsap } from "gsap";
@@ -39,7 +39,7 @@ function HeroPages({ page, title }) {
     <Box
       sx={{
         maxWidth: "100%",
-        height: { xs: "50vh", md: "100vh" },
+        height: { xs: "35vh", md: "100vh" },
         position: "relative",
         zIndex: 1,
         backgroundColor: "#efeef3",
@@ -47,14 +47,14 @@ function HeroPages({ page, title }) {
       }}
     >
       <Stack direction={"row"}>
-        <Stack sx={{ position: "relative" }}>
+        <Stack sx={{ position: "relative", marginX: "auto", marginY: "auto" }}>
           <Stack
             gap={3}
             ref={textRef}
             sx={{
-              marginLeft: "110px",
+              marginLeft: { xs: "0", md: "110px" },
               marginY: "auto",
-              marginTop: { xs: "22vh", md: "auto" },
+              marginTop: { xs: "15vh", md: "auto" },
             }}
             justifyContent={"center"}
             alignItems={"center"}
@@ -66,15 +66,15 @@ function HeroPages({ page, title }) {
                 paddingLeft: "22px",
                 borderRadius: "50px",
                 width: "200px",
-                display: "inline-block",
+                display: { xs: "none", md: "inline-block" },
                 marginLeft: "-20px",
               }}
             >
               <Typography
                 variant="subtitle1"
                 sx={{
-                  color: "#303f9f",
-                  borderLeft: "solid 4px #303f9f",
+                  color: "#1a237e",
+                  borderLeft: "solid 4px #1a237e",
                   paddingLeft: "16px",
                   fontSize: "14px",
                   fontWeight: "bold",
@@ -86,7 +86,7 @@ function HeroPages({ page, title }) {
             <Typography
               ref={textRef}
               sx={{
-                fontSize: { xs: "30px", md: "50px" },
+                fontSize: { xs: "40px", md: "50px" },
                 lineHeight: "60px",
                 fontWeight: "bold",
               }}
@@ -106,22 +106,12 @@ function HeroPages({ page, title }) {
               <ArrowForwardIcon />
               <Typography
                 ref={textRef}
-                sx={{ fontWeight: "bold", color: "#303f9f", cursor: "pointer" }}
+                sx={{ fontWeight: "bold", color: "#1a237e", cursor: "pointer" }}
               >
                 {page}
               </Typography>
             </Stack>
           </Stack>
-          <Box sx={{ zIndex: 2, position: "absolute", top: 0, left: 0 }}>
-            <Image
-              loading="lazy"
-              src={shape2}
-              width={400}
-              alt="image3"
-              height={"110%"}
-              style={{ height: "100vh" }}
-            />
-          </Box>
         </Stack>
         <Box flexGrow={1} sx={{ display: { xs: "none", md: "flex" } }} />
         <Stack sx={{ display: { xs: "none", md: "flex" } }}>
@@ -176,6 +166,15 @@ function HeroPages({ page, title }) {
           </Box>
         </Stack>
       </Stack>
+      <Box sx={{ zIndex: 2, position: "absolute", bottom: 0, left: 0 }}>
+            <Image
+              loading="lazy"
+              src={shape2}
+              width={300}
+              alt="image3"
+              height={700}
+            />
+          </Box>
     </Box>
   );
 }

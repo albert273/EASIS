@@ -126,8 +126,8 @@ function OurServices() {
               <Typography
                 variant="subtitle1"
                 sx={{
-                  color: "#303f9f",
-                  borderLeft: "solid 4px #303f9f",
+                  color: "#1a237e",
+                  borderLeft: "solid 4px #1a237e",
                   paddingLeft: "16px",
                   fontSize: "14px",
                   fontWeight: "bold",
@@ -184,7 +184,7 @@ function OurServices() {
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
                   position: "relative",
-                  background: "#303f9f",
+                  background: "#1a237e",
                   overflow: "hidden",
                   transition: "all 0.5s",
                   "&:hover .hoverContent": {
@@ -211,7 +211,7 @@ function OurServices() {
                     top: 0,
                     height: "105%",
                     width: "0%", // Initially starts at 0 width (hidden)
-                    backgroundColor: "#303f9f", // Semi-transparent background
+                    backgroundColor: "#1a237e", // Semi-transparent background
                     transition: "width 0.3s ease, opacity 0.3s ease", // Smooth transition
                     zIndex: 99,
                     opacity: 0, // Initially hidden

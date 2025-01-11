@@ -16,8 +16,8 @@ const buttons = [
   { id: "1", title: "Home", link: "/" },
   { id: "2", title: "About us", link: "About" },
   { id: "3", title: "Service", link: "Services" },
-  { id: "4", title: "Contact", link: "/ContactUs" },
-  { id: "5", title: "Contact", link: "/Projects" },
+  { id: "4", title: "Contact us", link: "/ContactUs" },
+  { id: "5", title: "Projects", link: "/Projects" },
 ];
 
 const otherLinks = [
@@ -66,7 +66,7 @@ function Footer() {
             sx={{
               textTransform: "capitalize",
               borderRadius: "50px",
-              backgroundColor: "#303f9f",
+              backgroundColor: "#1a237e",
               padding: "10px 16px",
               fontWeight: "bold",
               fontSize: "16ps",
@@ -120,7 +120,7 @@ function Footer() {
           >
             <Stack gap={2}>
               <Stack direction={"row"} alignItems={"center"} gap={2}>
-                <LanguageIcon sx={{ color: "#303f9f", fontSize: "2rem" }} />
+                <LanguageIcon sx={{ color: "#1a237e", fontSize: "2rem" }} />
                 <Typography sx={{ fontSize: "1.6rem", fontWeight: "bold" }}>
                   EASIS
                 </Typography>
@@ -139,7 +139,7 @@ function Footer() {
                     height: "40px",
                     width: "40px",
                     background: "#e8eaf6",
-                    color: "#303f9f",
+                    color: "#1a237e",
                     fontSize: "20px",
                     borderRadius: "50%",
                     marginRight: "16px",
@@ -149,7 +149,7 @@ function Footer() {
                 >
                   <FacebookIcon
                     sx={{
-                      color: "#303f9f", // Fixed color code with '#'
+                      color: "#1a237e", // Fixed color code with '#'
                       fontSize: "20px",
                     }}
                   />
@@ -163,7 +163,7 @@ function Footer() {
                     height: "40px",
                     width: "40px",
                     background: "#e8eaf6",
-                    color: "#303f9f",
+                    color: "#1a237e",
                     fontSize: "20px",
                     borderRadius: "50%",
                     marginRight: "16px",
@@ -173,7 +173,7 @@ function Footer() {
                 >
                   <XIcon
                     sx={{
-                      color: "#303f9f", // Fixed color code with '#'
+                      color: "#1a237e", // Fixed color code with '#'
                       fontSize: "20px",
                     }}
                   />
@@ -187,7 +187,7 @@ function Footer() {
                     height: "40px",
                     width: "40px",
                     background: "#e8eaf6",
-                    color: "#303f9f",
+                    color: "#1a237e",
                     fontSize: "20px",
                     borderRadius: "50%",
                     marginRight: "16px",
@@ -197,7 +197,7 @@ function Footer() {
                 >
                   <InstagramIcon
                     sx={{
-                      color: "#303f9f", // Fixed color code with '#'
+                      color: "#1a237e", // Fixed color code with '#'
                       fontSize: "20px",
                     }}
                   />
@@ -211,7 +211,7 @@ function Footer() {
                     height: "40px",
                     width: "40px",
                     background: "#e8eaf6",
-                    color: "#303f9f",
+                    color: "#1a237e",
                     fontSize: "20px",
                     borderRadius: "50%",
                     marginRight: "16px",
@@ -221,7 +221,7 @@ function Footer() {
                 >
                   <LinkedInIcon
                     sx={{
-                      color: "#303f9f", // Fixed color code with '#'
+                      color: "#1a237e", // Fixed color code with '#'
                       fontSize: "20px",
                     }}
                   />
@@ -240,7 +240,7 @@ function Footer() {
                       sx={{
                         cursor: "pointer",
                         color: "#4A4A49",
-                        "&:hover": { color: "#303f9f", paddingLeft: "5px" },
+                        "&:hover": { color: "#1a237e", paddingLeft: "5px" },
                         transition: "0.3s",
                       }}
                     >
@@ -261,7 +261,7 @@ function Footer() {
                       sx={{
                         cursor: "pointer",
                         color: "#4A4A49",
-                        "&:hover": { color: "#303f9f", paddingLeft: "5px" },
+                        "&:hover": { color: "#1a237e", paddingLeft: "5px" },
                         transition: "0.3s",
                       }}
                     >
@@ -284,7 +284,7 @@ function Footer() {
                   paddingBottom: "20px",
                 }}
               >
-                <FaxIcon sx={{ fontSize: "2rem", color: "#303f9f" }} />
+                <FaxIcon sx={{ fontSize: "2rem", color: "#1a237e" }} />
                 <Stack>
                   <Typography
                     sx={{
@@ -297,7 +297,7 @@ function Footer() {
                   </Typography>
                   <Typography
                     sx={{
-                      "&:hover": { color: "#303f9f", opacity:1 },
+                      "&:hover": { color: "#1a237e", opacity: 1 },
                       cursor: "pointer",
                       fontWeight: "bold",
                       color: "black",
@@ -317,7 +317,7 @@ function Footer() {
                   paddingBottom: "20px",
                 }}
               >
-                <AlarmOnIcon sx={{ fontSize: "2rem", color: "#303f9f" }} />
+                <AlarmOnIcon sx={{ fontSize: "2rem", color: "#1a237e" }} />
                 <Stack>
                   <Typography
                     sx={{
@@ -338,7 +338,7 @@ function Footer() {
 
               <Stack direction={"row"} gap={2}>
                 <AlternateEmailIcon
-                  sx={{ fontSize: "2rem", color: "#303f9f" }}
+                  sx={{ fontSize: "2rem", color: "#1a237e" }}
                 />
                 <Stack>
                   <Typography
@@ -353,7 +353,7 @@ function Footer() {
                   <Typography
                     sx={{
                       fontWeight: "bold",
-                      "&:hover": { color: "#303f9f", opacity:1 },
+                      "&:hover": { color: "#1a237e", opacity: 1 },
                       cursor: "pointer",
                       fontSize: "1.1rem",
                       color: "black",

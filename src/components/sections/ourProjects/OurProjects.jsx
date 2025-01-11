@@ -99,11 +99,11 @@ function OurProjects() {
               <Typography
                 variant="subtitle1"
                 sx={{
-                  color: "#303f9f",
-                  borderLeft: "solid 4px #303f9f",
+                  color: "#1a237e",
+                  borderLeft: "solid 4px #1a237e",
                   paddingLeft: "16px",
                   fontSize: "14px",
-                  fontWeight: 'bold',
+                  fontWeight: "bold",
                 }}
               >
                 Our Projects
@@ -196,7 +196,7 @@ function OurProjects() {
                     top: "100%", // Start at the bottom of the container
                     height: "0%", // Initially hidden (height is 0%)
                     width: "85%", // Cover the entire width
-                    backgroundColor: "#303f9f", // Blue background
+                    backgroundColor: "#1a237e", // Blue background
                     transition:
                       "height 0.3s ease, top 0.3s ease, opacity 0.5s ease", // Smooth transition
                     zIndex: 99,
@@ -225,7 +225,7 @@ function OurProjects() {
                       sx={{
                         fontSize: "2.6rem",
                         verticalAlign: "middle",
-                        color: "#303f9f",
+                        color: "#1a237e",
                       }}
                     />
                   </Box>
@@ -323,7 +323,7 @@ function OurProjects() {
                     top: "100%", // Start at the bottom of the container
                     height: "0%", // Initially hidden (height is 0%)
                     width: "85%", // Cover the entire width
-                    backgroundColor: "#303f9f", // Blue background
+                    backgroundColor: "#1a237e", // Blue background
                     transition:
                       "height 0.3s ease, top 0.3s ease, opacity 0.5s ease", // Smooth transition
                     zIndex: 99,
@@ -352,7 +352,7 @@ function OurProjects() {
                       sx={{
                         fontSize: "2.6rem",
                         verticalAlign: "middle",
-                        color: "#303f9f",
+                        color: "#1a237e",
                       }}
                     />
                   </Box>
@@ -450,7 +450,7 @@ function OurProjects() {
                     top: "100%", // Start at the bottom of the container
                     height: "0%", // Initially hidden (height is 0%)
                     width: "85%", // Cover the entire width
-                    backgroundColor: "#303f9f", // Blue background
+                    backgroundColor: "#1a237e", // Blue background
                     transition:
                       "height 0.3s ease, top 0.3s ease, opacity 0.5s ease", // Smooth transition
                     zIndex: 99,
@@ -479,7 +479,7 @@ function OurProjects() {
                       sx={{
                         fontSize: "2.6rem",
                         verticalAlign: "middle",
-                        color: "#303f9f",
+                        color: "#1a237e",
                       }}
                     />
                   </Box>
@@ -583,7 +583,7 @@ function OurProjects() {
                     top: "100%", // Start at the bottom of the container
                     height: "0%", // Initially hidden (height is 0%)
                     width: "85%", // Cover the entire width
-                    backgroundColor: "#303f9f", // Blue background
+                    backgroundColor: "#1a237e", // Blue background
                     transition:
                       "height 0.3s ease, top 0.3s ease, opacity 0.5s ease", // Smooth transition
                     zIndex: 99,
@@ -612,7 +612,7 @@ function OurProjects() {
                       sx={{
                         fontSize: "2.6rem",
                         verticalAlign: "middle",
-                        color: "#303f9f",
+                        color: "#1a237e",
                       }}
                     />
                   </Box>
@@ -709,7 +709,7 @@ function OurProjects() {
                     top: "100%",
                     height: "0%",
                     width: "85%",
-                    backgroundColor: "#303f9f",
+                    backgroundColor: "#1a237e",
                     transition:
                       "height 0.3s ease, top 0.3s ease, opacity 0.5s ease",
                     zIndex: 99,
@@ -738,7 +738,7 @@ function OurProjects() {
                       sx={{
                         fontSize: "2.6rem",
                         verticalAlign: "middle",
-                        color: "#303f9f",
+                        color: "#1a237e",
                       }}
                     />
                   </Box>
