@@ -123,7 +123,7 @@ export default function WhatWeDo() {
                 fontWeight: "bold",
               }}
             >
-              What We Do
+              Who We Are
             </Typography>
           </Box>
           <Typography sx={{ fontSize: "40px", fontWeight: "bold" }}>
@@ -132,10 +132,12 @@ export default function WhatWeDo() {
           <Typography
             sx={{ color: "#5D6061", fontSize: "16px", marginBottom: "20px" }}
           >
-            We leverage cutting-edge technology & a global network to ensure
-            seamless international and domestic shipments, while our experienced
-            team provides personalized support and expert guidance every step of
-            the way.
+            EASIS is a leading provider of international freight forwarding
+            services. We offer a wide range of shipping services, including air,
+            sea, and road freight. Our team consists of highly experienced
+            professionals, committed to delivering innovative solutions that
+            meet our clients’ needs. We are known for our precision, safety, and
+            on-time delivery.
           </Typography>
           <Stack gap={2} sx={{ marginBottom: "50px" }}>
             {[

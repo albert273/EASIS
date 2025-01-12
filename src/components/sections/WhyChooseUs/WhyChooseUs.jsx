@@ -13,7 +13,7 @@ import { gsap } from "gsap";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import Link from "next/link";
 
-function WhyWeAre() {
+function WhyChooseUs() {
   const rightRef = useRef(null);
   const leftRef = useRef(null);
   const sectionRef = useRef(null);
@@ -295,7 +295,7 @@ function WhyWeAre() {
                 backgroundColor: "#e8eaf6",
                 paddingLeft: "22px",
                 borderRadius: "50px",
-                width: "150px",
+                width: "170px",
               }}
             >
               <Typography
@@ -308,7 +308,7 @@ function WhyWeAre() {
                   fontWeight: "bold",
                 }}
               >
-                Why We Are
+                Why Choose Us
               </Typography>
             </Box>
 
@@ -316,10 +316,11 @@ function WhyWeAre() {
               Our Commitment: Reliable And Efficient Logistics
             </Typography>
             <Typography variant="body1" sx={{ color: "#5a5d63" }}>
-              With years of industry experience and a commitment to innovation,
-              we have become leaders in providing comprehensive, reliable, and
-              efficient logistics solutions. Our dedicated team of experts works
-              tirelessly to ensure:
+              Global Expertise: Over 10 years of experience providing global
+              shipping and freight forwarding solutions. Worldwide Network:
+              Partnerships with leading air, sea, and land freight carriers
+              globally. Competitive Pricing: We offer the best prices in the
+              market without compromising on quality.
             </Typography>
 
             <Stack
@@ -382,12 +383,12 @@ function WhyWeAre() {
                   color: "#5a5d63",
                 }}
               >
-                We are driving success and creating opportunities for growth.
-                Discover difference with a logistics partner that is truly
-                invested in your success.
+                Tailored Solutions: Customized freight solutions to meet your
+                specific needs. Real-Time Tracking: Live updates on your
+                shipment status via our online portal
               </Typography>
             </Box>
-            <Link href={"/AboutUs"}>
+            <Link href={"/MakeQuote"}>
               <Button
                 variant="contained"
                 sx={{
@@ -425,4 +426,4 @@ function WhyWeAre() {
   );
 }
 
-export default WhyWeAre;
+export default WhyChooseUs;

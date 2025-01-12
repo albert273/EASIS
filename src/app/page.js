@@ -3,7 +3,7 @@ import AboutUs from "@/components/sections/aboutUs/AboutUs";
 import OurServices from "@/components/sections/services/OurServices";
 import Testimonial from "@/components/sections/testimonial/Testimonial";
 import { Box } from "@mui/material";
-import Section1 from "@/components/sections/whyWeAre/WhyWeAre";
+import WhyChooseUs from "@/components/sections/WhyChooseUs/WhyChooseUs";
 import OurProjects from "@/components/sections/ourProjects/OurProjects";
 
 
@@ -12,7 +12,7 @@ export default function Home() {
     <Box>
       <Hero2 />
       <AboutUs />
-      <Section1 />
+      <WhyChooseUs />
       <OurServices/>
       <OurProjects />
       <Testimonial />

@@ -160,22 +160,25 @@ function Hero2() {
           </Box>
           <Typography
             sx={{
-              fontSize: { xs: "30px", md: "50px" },
-              lineHeight: { xs: "45px", md: "60px" },
+              fontSize: { xs: "25px", md: "35px" },
+              lineHeight: { xs: "40px", md: "45px" },
               fontWeight: "bold",
               color: "#fff",
             }}
             ref={leftTypographyRef}
           >
-            Seamless Transport <br /> And Logistics For A <br /> Global Reach
+            EASIS - Egypt Air and Sea for International Shipping. Integrated
+            Solutions for International Shipping & Logistics.
           </Typography>
           <Typography
             sx={{ fontWeight: 400, color: "white" }}
             ref={leftTypography2Ref}
           >
-            Whether it&apos;s international shipping, domestic transport,
-            specialized logistics, our expertise ensures that every shipment is
-            handled with precision and care
+            Welcome to EASIS, a leader in freight forwarding services. We make
+            global cargo movement easier, ensuring safety and efficiency at
+            every step. We offer customized solutions tailored to meet your
+            logistics needs, whether you&apos;re a small business or a large
+            corporation.
           </Typography>
           <Stack direction={"row"} gap={2} ref={bottomRef}>
             <Link href={"/MakeQuote"}>

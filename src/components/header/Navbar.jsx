@@ -58,10 +58,10 @@ const Navbar = () => {
         direction={"row"}
         sx={{
           width: { xs: "100%", sm: isScrolled ? "100%" : "85%" },
-          backgroundColor: "#f8f9fa",
+          backgroundColor: "#fff",
           paddingLeft: { xs: 0, sm: isScrolled ? "180px" : "30px" },
           paddingRight: { xs: "20px", sm: isScrolled ? "60px" : "50px" },
-          borderRadius: isScrolled ? "0" : "87px", // Rounded when not scrolled
+          borderRadius: {xs: "0",md: isScrolled ? "0" : "87px"}, // Rounded when not scrolled
           boxShadow: isScrolled
             ? "0px 4px 15px rgba(0, 0, 0, 0.1)"
             : "0px 4px 8px rgba(0, 0, 0, 0.05)",
@@ -71,7 +71,8 @@ const Navbar = () => {
           left: 0,
           right: 0,
           marginX: "auto", // Center the navbar when smaller
-          transition: "all 0.5s ease-in-out", // Smooth transition for width and position
+          transition: "all 0.5s ease-in-out",
+          py: "10px" // Smooth transition for width and position
         }}
         justifyContent={"space-between"}
         alignItems={"center"}
@@ -84,7 +85,7 @@ const Navbar = () => {
             sx={{ cursor: "pointer", marginLeft: isScrolled ? "8%" : 0 }}
           >
             <Box>
-              <Image src={logo} alt="logo" width={90} height={80} />
+              <Image src={logo} alt="logo" width={90} height={75} />
             </Box>
           </Stack>
         </Link>

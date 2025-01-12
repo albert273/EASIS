@@ -6,11 +6,12 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import LanguageIcon from "@mui/icons-material/Language";
 import Link from "next/link";
 import AlarmOnIcon from "@mui/icons-material/AlarmOn";
 import FaxIcon from "@mui/icons-material/Fax";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import logo from "../../../public/logo.png";
+import Image from "next/image";
 
 const buttons = [
   { id: "1", title: "Home", link: "/" },
@@ -61,34 +62,36 @@ function Footer() {
           </Typography>
         </Box>
         <Box>
-          <Button
-            variant="contained"
-            sx={{
-              textTransform: "capitalize",
-              borderRadius: "50px",
-              backgroundColor: "#1a237e",
-              padding: "10px 16px",
-              fontWeight: "bold",
-              fontSize: "16ps",
-              lineHeight: "16px",
-              transition: ".3s",
-              "&:hover": { backgroundColor: "black" },
-            }}
-            endIcon={
-              <KeyboardArrowRightIcon
-                sx={{
-                  height: "32px",
-                  width: "32px",
-                  lineHeight: "32",
-                  marginLeft: "6px",
-                  borderRadius: "50%",
-                  backgroundColor: "#3f51b5",
-                }}
-              />
-            }
-          >
-            Get A Quote
-          </Button>
+          <Link href={"/MakeQuote"}>
+            <Button
+              variant="contained"
+              sx={{
+                textTransform: "capitalize",
+                borderRadius: "50px",
+                backgroundColor: "#1a237e",
+                padding: "10px 16px",
+                fontWeight: "bold",
+                fontSize: "16ps",
+                lineHeight: "16px",
+                transition: ".3s",
+                "&:hover": { backgroundColor: "black" },
+              }}
+              endIcon={
+                <KeyboardArrowRightIcon
+                  sx={{
+                    height: "32px",
+                    width: "32px",
+                    lineHeight: "32",
+                    marginLeft: "6px",
+                    borderRadius: "50%",
+                    backgroundColor: "#3f51b5",
+                  }}
+                />
+              }
+            >
+              Get A Quote
+            </Button>
+          </Link>
         </Box>
       </Stack>
       <Stack
@@ -118,13 +121,10 @@ function Footer() {
               justifyContent: "space-around",
             }}
           >
-            <Stack gap={2}>
-              <Stack direction={"row"} alignItems={"center"} gap={2}>
-                <LanguageIcon sx={{ color: "#1a237e", fontSize: "2rem" }} />
-                <Typography sx={{ fontSize: "1.6rem", fontWeight: "bold" }}>
-                  EASIS
-                </Typography>
-              </Stack>
+            <Stack gap={2} alignItems={"center"}>
+              <Box>
+                <Image src={logo} alt="logo" width={105} height={90} />
+              </Box>
               <Typography>
                 {" "}
                 6 Ankara street , Sheraton Heliopolis ,<br /> District 4 ,
@@ -291,6 +291,8 @@ function Footer() {
                       color: "black",
                       textTransform: "capitalize",
                       fontWeight: "bold",
+                      fontSize: "1.1rem"
+
                     }}
                   >
                     Fax number
@@ -315,7 +317,10 @@ function Footer() {
                 sx={{
                   borderBottom: "2px solid #616161",
                   paddingBottom: "20px",
+                  
                 }}
+                alignItems={"center"}
+
               >
                 <AlarmOnIcon sx={{ fontSize: "2rem", color: "#1a237e" }} />
                 <Stack>
@@ -324,6 +329,7 @@ function Footer() {
                       color: "black",
                       textTransform: "capitalize",
                       fontWeight: "bold",
+                      fontSize: "1.1rem"
                     }}
                   >
                     Working Hours
@@ -331,7 +337,7 @@ function Footer() {
                   <Typography
                     sx={{ fontWeight: "bold", color: "black", opacity: 0.7 }}
                   >
-                    Saturday: 8:30 AM - 3:00 PM
+                    Saturday to Thursday: <br/>9:00 AM - 5:00 PM
                   </Typography>
                 </Stack>
               </Stack>
@@ -346,6 +352,7 @@ function Footer() {
                       color: "black",
                       textTransform: "capitalize",
                       fontWeight: "bold",
+                      fontSize: "1.1rem"
                     }}
                   >
                     Send Us Email

@@ -13,6 +13,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Link from "next/link";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import Image from "next/image";
+import logo from "../../../public/logo.png";
 
 function AppBar({ setAppBar, isOpen, buttons, appBarRef }) {
   const [openDropdown, setOpenDropdown] = React.useState(false);
@@ -98,11 +100,8 @@ function AppBar({ setAppBar, isOpen, buttons, appBarRef }) {
             sx={{ cursor: "pointer", color: "black" }}
           >
             <Box>
-              <LanguageIcon sx={{ fontSize: "2rem", color: "#1a237e" }} />
+              <Image src={logo} alt="logo" width={90} height={75} />
             </Box>
-            <Typography sx={{ fontSize: "1.6rem", fontWeight: "bold" }}>
-              EASIS
-            </Typography>
           </Stack>{" "}
         </Link>
         <CloseIcon
@@ -215,8 +214,8 @@ function AppBar({ setAppBar, isOpen, buttons, appBarRef }) {
           marginBottom: "20px",
         }}
       >
-        DGL International is one of the rare
-        <br /> companies proficient of handling and packing <br />
+EASIS - Egypt Air and Sea for International Shipping. Integrated
+Solutions for International Shipping & Logistics.
         DGR shipment.
       </Typography>
       <Stack direction={"row"} alignItems={"center"} sx={{ mb: "50px" }}>
