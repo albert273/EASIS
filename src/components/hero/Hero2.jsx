@@ -164,22 +164,14 @@ function Hero2() {
               lineHeight: { xs: "40px", md: "45px" },
               fontWeight: "bold",
               color: "#fff",
+              marginBottom: "20px"
             }}
             ref={leftTypographyRef}
           >
             EASIS - Egypt Air and Sea for International Shipping. Integrated
             Solutions for International Shipping & Logistics.
           </Typography>
-          <Typography
-            sx={{ fontWeight: 400, color: "white" }}
-            ref={leftTypography2Ref}
-          >
-            Welcome to EASIS, a leader in freight forwarding services. We make
-            global cargo movement easier, ensuring safety and efficiency at
-            every step. We offer customized solutions tailored to meet your
-            logistics needs, whether you&apos;re a small business or a large
-            corporation.
-          </Typography>
+
           <Stack direction={"row"} gap={2} ref={bottomRef}>
             <Link href={"/MakeQuote"}>
               <Button

@@ -112,7 +112,7 @@ export default function ImageListComponents() {
               marginTop: "28px",
             }}
           >
-            Transportation
+            Global Freight Solutions
           </Typography>
           <Typography
             variant="h4"
@@ -128,7 +128,7 @@ export default function ImageListComponents() {
               textAlign: "center",
             }}
           >
-            Customs Clearance Excellence
+            Seamless International Shipping
           </Typography>
           <Typography
             sx={{
@@ -140,8 +140,8 @@ export default function ImageListComponents() {
               textAlign: "center",
             }}
           >
-            Explore our case studies achievements to see how we have
-            transformed.
+            Discover how our expertise in global freight management has
+            simplified cross-border logistics for businesses worldwide.
           </Typography>
         </Box>
       </Box>
@@ -239,7 +239,7 @@ export default function ImageListComponents() {
               marginTop: "28px",
             }}
           >
-            Transportation
+            Warehousing Optimization
           </Typography>
           <Typography
             variant="h4"
@@ -255,7 +255,7 @@ export default function ImageListComponents() {
               textAlign: "center",
             }}
           >
-            Customs Clearance Excellence
+            Efficient Storage and Distribution
           </Typography>
           <Typography
             sx={{
@@ -267,8 +267,8 @@ export default function ImageListComponents() {
               textAlign: "center",
             }}
           >
-            Explore our case studies achievements to see how we have
-            transformed.
+            Learn how we have streamlined inventory management and reduced costs
+            for our clients through advanced warehousing solutions.
           </Typography>
         </Box>
       </Box>
@@ -330,7 +330,7 @@ export default function ImageListComponents() {
             display: "flex",
             flexDirection: "column",
             borderRadius: "15px",
-            padding: "28px 20px",
+            padding: "12px 10px",
           }}
         >
           <Box
@@ -366,7 +366,7 @@ export default function ImageListComponents() {
               marginTop: "8px",
             }}
           >
-            Transportation
+            Last-Mile Delivery
           </Typography>
           <Typography
             variant="h4"
@@ -382,7 +382,7 @@ export default function ImageListComponents() {
               textAlign: "center",
             }}
           >
-            Customs Clearance Excellence
+            On-Time Every Time
           </Typography>
           <Typography
             sx={{
@@ -394,8 +394,8 @@ export default function ImageListComponents() {
               textAlign: "center",
             }}
           >
-            Explore our case studies achievements to see how we have
-            transformed.
+            Explore how we ensure timely and reliable deliveries to the final
+            destination, enhancing customer satisfaction.
           </Typography>
         </Box>
       </Box>
@@ -493,7 +493,7 @@ export default function ImageListComponents() {
               marginTop: "8px",
             }}
           >
-            Transportation
+            Customs Brokerage Services{" "}
           </Typography>
           <Typography
             variant="h4"
@@ -509,7 +509,7 @@ export default function ImageListComponents() {
               textAlign: "center",
             }}
           >
-            Customs Clearance Excellence
+            Hassle-Free Compliance
           </Typography>
           <Typography
             sx={{
@@ -521,8 +521,7 @@ export default function ImageListComponents() {
               textAlign: "center",
             }}
           >
-            Explore our case studies achievements to see how we have
-            transformed.
+            See how our in-depth knowledge of customs regulations has expedited clearance processes for our clients.
           </Typography>
         </Box>
       </Box>
@@ -619,7 +618,7 @@ export default function ImageListComponents() {
               marginTop: "28px",
             }}
           >
-            Transportation
+            Supply Chain Integration
           </Typography>
           <Typography
             variant="h4"
@@ -635,7 +634,7 @@ export default function ImageListComponents() {
               textAlign: "center",
             }}
           >
-            Customs Clearance Excellence
+            End-to-End Visibility
           </Typography>
           <Typography
             sx={{
@@ -647,8 +646,7 @@ export default function ImageListComponents() {
               textAlign: "center",
             }}
           >
-            Explore our case studies achievements to see how we have
-            transformed.
+            Discover how we connect every link in the supply chain to deliver seamless and transparent logistics solutions.
           </Typography>
         </Box>
       </Box>
@@ -746,7 +744,7 @@ export default function ImageListComponents() {
               marginTop: "28px",
             }}
           >
-            Transportation
+            Cold Chain Logistics
           </Typography>
           <Typography
             variant="h4"
@@ -762,7 +760,7 @@ export default function ImageListComponents() {
               textAlign: "center",
             }}
           >
-            Customs Clearance Excellence
+            Preserving Freshness and Quality
           </Typography>
           <Typography
             sx={{
@@ -774,8 +772,7 @@ export default function ImageListComponents() {
               textAlign: "center",
             }}
           >
-            Explore our case studies achievements to see how we have
-            transformed.
+            Explore our innovative cold chain solutions that maintain product integrity from origin to destination.
           </Typography>
         </Box>
       </Box>

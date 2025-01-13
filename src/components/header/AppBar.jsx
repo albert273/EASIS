@@ -110,7 +110,7 @@ function AppBar({ setAppBar, isOpen, buttons, appBarRef }) {
         />
       </Stack>
 
-      <Box sx={{ marginBottom: "50px", display: { xs: "block", md: "none" } }}>
+      <Box sx={{ marginBottom: "50px", display: { xs: "block", lg: "none" } }}>
         {buttons.map((button) => (
           <React.Fragment key={button.id}>
             {button.link ? (
@@ -214,9 +214,8 @@ function AppBar({ setAppBar, isOpen, buttons, appBarRef }) {
           marginBottom: "20px",
         }}
       >
-EASIS - Egypt Air and Sea for International Shipping. Integrated
-Solutions for International Shipping & Logistics.
-        DGR shipment.
+        EASIS - Egypt Air and Sea for International Shipping. Integrated
+        Solutions for International Shipping & Logistics. DGR shipment.
       </Typography>
       <Stack direction={"row"} alignItems={"center"} sx={{ mb: "50px" }}>
         <Link href={"/pages/UserQuote"}>
@@ -270,8 +269,7 @@ Solutions for International Shipping & Logistics.
         >
           <LocationOnIcon sx={{ fontSize: "30px" }} />
           <Typography>
-            6 Ankara street , Sheraton Heliopolis , District 4 , Heliopolis ,
-            Cairo,Egypt
+          62 El Obour Street, Sheraton, Cairo Airport, Cairo.
           </Typography>
         </Stack>
         <Stack
@@ -281,7 +279,7 @@ Solutions for International Shipping & Logistics.
           gap={4}
         >
           <LocalPhoneIcon sx={{ fontSize: "30px" }} />
-          <Typography>+2 01066611788 </Typography>
+          <Typography>+ 0222670614  </Typography>
         </Stack>
       </Stack>
       <Stack

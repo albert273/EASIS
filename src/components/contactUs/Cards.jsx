@@ -10,7 +10,7 @@ const contactItem = [
   {
     id: "1",
     title: "Our Address",
-    subtitle: "55 Street, 2nd block, 3rd Floor Melbourne, Australia",
+    subtitle: "62 El Obour Street, Sheraton, Cairo Airport, Cairo. ",
     icon: (
       <LocationOnIcon
         className="icon"
@@ -21,7 +21,13 @@ const contactItem = [
   {
     id: "2",
     title: "Contact Us",
-    subtitle: `+022(123)4568806 (+47)122109878`,
+    subtitle: (
+      <>
+        0222 670 614
+        <br />
+        0102 2172 922{" "}
+      </>
+    ),
     icon: (
       <LocalPhoneIcon
         className="icon"
@@ -32,7 +38,7 @@ const contactItem = [
   {
     id: "3",
     title: "Email Us",
-    subtitle: "infocargon@gmail.com drmtech99.com",
+    subtitle: "overseas@easis.info",
     icon: (
       <EmailIcon
         className="icon"

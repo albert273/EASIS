@@ -22,50 +22,50 @@ function Testimonial() {
     {
       id: "1",
       title:
-        "Read about how our tailored solutions have helped businesses achieve",
+        "Discover how our innovative solutions transformed logistics for our clients",
       description:
-        "Our clients' satisfaction is our top priority, and their feedback speaks volumes about our dedication to excellence. We take immense pride in the positive experiences shared by businesses across various industries who rely on our transport and logistics expertise.",
-      user: { image: img, username: "Shevon Daniel" },
+        "We are committed to delivering exceptional service, ensuring our clients' logistics needs are met with precision and care. Our tailored strategies have enabled businesses to thrive in a competitive environment.",
+      user: { image: img, username: "Ali Ahmed" },
     },
     {
       id: "2",
       title:
-        "Read about how our tailored solutions have helped businesses achieve",
+        "See how we help businesses streamline their supply chain operations",
       description:
-        "Our clients' satisfaction is our top priority, and their feedback speaks volumes about our dedication to excellence. We take immense pride in the positive experiences shared by businesses across various industries who rely on our transport and logistics expertise.",
-      user: { image: img, username: "Shevon Daniel" },
+        "By understanding our clients' unique challenges, we provide customized solutions that improve efficiency and reduce costs. Their success stories inspire us to continue delivering excellence.",
+      user: { image: img, username: "John Ashrf" },
     },
     {
       id: "3",
       title:
-        "Read about how our tailored solutions have helped businesses achieve",
+        "Learn how our expertise in logistics ensures timely and reliable delivery",
       description:
-        "Our clients' satisfaction is our top priority, and their feedback speaks volumes about our dedication to excellence. We take immense pride in the positive experiences shared by businesses across various industries who rely on our transport and logistics expertise.",
-      user: { image: img, username: "Shevon Daniel" },
+        "Our focus on reliability and accuracy has earned us the trust of businesses worldwide. We are proud to be a part of their journey toward growth and success.",
+      user: { image: img, username: "Sophia Bennett" },
     },
     {
       id: "4",
       title:
-        "Read about how our tailored solutions have helped businesses achieve",
+        "Explore how our technology-driven approach enhances logistics efficiency",
       description:
-        "Our clients' satisfaction is our top priority, and their feedback speaks volumes about our dedication to excellence. We take immense pride in the positive experiences shared by businesses across various industries who rely on our transport and logistics expertise.",
-      user: { image: img, username: "Shevon Daniel" },
+        "Through advanced technology and innovative practices, we have helped businesses optimize their operations and achieve remarkable results. Client satisfaction remains at the heart of what we do.",
+      user: { image: img, username: "Mohamed ahmed" },
     },
     {
       id: "5",
       title:
-        "Read about how our tailored solutions have helped businesses achieve",
+        "Find out how our customer-centric approach creates lasting partnerships",
       description:
-        "Our clients' satisfaction is our top priority, and their feedback speaks volumes about our dedication to excellence. We take immense pride in the positive experiences shared by businesses across various industries who rely on our transport and logistics expertise.",
-      user: { image: img, username: "Shevon Daniel" },
+        "We believe in building long-term relationships with our clients by understanding their needs and exceeding their expectations. Their positive feedback is a testament to our dedication.",
+      user: { image: img, username: "Zain" },
     },
     {
       id: "6",
       title:
-        "Read about how our tailored solutions have helped businesses achieve",
+        "Read about how our tailored solutions drive business growth and success",
       description:
-        "Our clients' satisfaction is our top priority, and their feedback speaks volumes about our dedication to excellence. We take immense pride in the positive experiences shared by businesses across various industries who rely on our transport and logistics expertise.",
-      user: { image: img, username: "Shevon Daniel" },
+        "Our comprehensive logistics services empower businesses to focus on their core strengths while we handle their transport and supply chain needs with excellence.",
+      user: { image: img, username: "Mazen Montaser" },
     },
   ];
 
@@ -177,7 +177,7 @@ function Testimonial() {
                 backgroundColor: "#e8eaf6",
                 paddingLeft: "22px",
                 borderRadius: "50px",
-                width: "170px",
+                width: "230px",
                 marginX: "auto",
               }}
             >
@@ -188,10 +188,10 @@ function Testimonial() {
                   borderLeft: "solid 4px #1a237e",
                   paddingLeft: "16px",
                   fontSize: "14px",
-                  fontWeight: 400,
+                  fontWeight: "bold",
                 }}
               >
-                Our Testimonial
+                What people say about us
               </Typography>
             </Box>
             <Box>
@@ -200,7 +200,7 @@ function Testimonial() {
                 fontWeight="bold"
                 sx={{ textAlign: "center", marginY: "1rem" }}
               >
-                Trusted by Industry Leaders
+                Trusted by Clients
               </Typography>
             </Box>
             <Box>
@@ -213,7 +213,7 @@ function Testimonial() {
                   fontSize: "13px",
                 }}
               >
-                Their testimonials highlight our commitment to overcoming
+                Our certifications highlight our commitment to overcoming
                 logistical challenges and delivering on our promises.
               </Typography>
             </Box>

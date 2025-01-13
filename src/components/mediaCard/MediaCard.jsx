@@ -60,13 +60,8 @@ function MediaCard({ title, description, image, username }) {
         sx={{ flexWrap: "nowrap" }}
         gap={2}
       >
-        <Image
-          alt={username}
-          src={image}
-          width={"60px"}
-          height={"60px"}
-          style={{ border: "#0e47a1 solid 1px", borderRadius: "50%" }}
-        />
+      <Avatar>{username.charAt(0)}</Avatar>
+
         <Typography
           sx={{
             color: "#1a237e",

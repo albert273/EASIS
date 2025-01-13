@@ -16,27 +16,23 @@ import CheckIcon from "@mui/icons-material/Check";
 const questions = [
   {
     id: "1",
-    title: "What is your policy on damaged or lost goods?",
-    content:
-      " That's why we've compiled a list of frequently asked questions to help you get the answers you need quickly and easily. Whether you're curious about our range of services, need information on tracking your shipment, or want to understand.",
+    title: "Freight Transportation",
+    content: `Moving goods from one location to another via air, sea, road, or rail. This includes domestic and international shipping.\nKey Features:\nFull Truckload (FTL) and Less-than-Truckload (LTL) services.\nExpedited shipping for time-sensitive deliveries.\nMulti-modal transport options.`,
   },
   {
     id: "2",
-    title: "What should I do if my shipment is delayed?",
-    content:
-      " That's why we've compiled a list of frequently asked questions to help you get the answers you need quickly and easily. Whether you're curious about our range of services, need information on tracking your shipment, or want to understand.",
+    title: "Warehousing and Storage",
+    content: `Providing secure and efficient storage solutions for goods until they are ready for distribution.\nKey Features:\nTemperature-controlled warehouses for perishable goods.\nInventory management systems for real-time tracking.\nCross-docking and consolidation services.`,
   },
   {
     id: "3",
-    title: "Can you handle oversized or special cargo?",
-    content:
-      " That's why we've compiled a list of frequently asked questions to help you get the answers you need quickly and easily. Whether you're curious about our range of services, need information on tracking your shipment, or want to understand.",
+    title: "Customs Clearance and Documentation",
+    content: `Handling the legal and administrative processes required for international shipping.\nKey Features:\nAssistance with import/export documentation.\nCompliance with customs regulations and duties.\nSupport for obtaining necessary permits and certifications.`,
   },
   {
     id: "4",
-    title: "What types of goods can you transport?",
-    content:
-      "That's why we've compiled a list of frequently asked questions to help you get the answers you need quickly and easily. Whether you're curious about our range of services, need information on tracking your shipment, or want to understand.",
+    title: "Supply Chain Management",
+    content: `Offering end-to-end solutions to streamline the supply chain process.\nKey Features:\nDemand planning and forecasting.\nVendor and inventory management.\nOptimization of logistics networks for cost efficiency.`,
   },
 ];
 export default function RightSection() {

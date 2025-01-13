@@ -146,6 +146,7 @@ function OurProjects() {
               justifyContent={"center"}
               gap={1}
               alignItems={"center"}
+              sx={{ width: "100%" }}
             >
               <Box
                 ref={image1Ref}

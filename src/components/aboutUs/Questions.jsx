@@ -23,45 +23,46 @@ const questions = [
     id: "1",
     title: "What should I do if my shipment is delayed?",
     content:
-      " That's why we've compiled a list of frequently asked questions to help you get the answers you need quickly and easily. Whether you're curious about our range of services, need information on tracking your shipment, or want to understand.",
+      "If your shipment is delayed, please contact our customer service team with your tracking number. They will provide updates and assist in resolving any issues.",
   },
   {
     id: "2",
-    title: "What should I do if my shipment is delayed?",
+    title: "How do I schedule a pickup for my shipment?",
     content:
-      " That's why we've compiled a list of frequently asked questions to help you get the answers you need quickly and easily. Whether you're curious about our range of services, need information on tracking your shipment, or want to understand.",
+      "To schedule a pickup, visit our website or contact our customer service team. Provide the necessary details, such as pickup address, package dimensions, and preferred time.",
   },
   {
     id: "3",
-    title: "What should I do if my shipment is delayed?",
+    title: "What are the payment options available?",
     content:
-      " That's why we've compiled a list of frequently asked questions to help you get the answers you need quickly and easily. Whether you're curious about our range of services, need information on tracking your shipment, or want to understand.",
+      "We accept a variety of payment methods, including credit/debit cards, bank transfers, and online payment platforms. For more details, visit our payment options page.",
   },
   {
     id: "4",
-    title: "What should I do if my shipment is delayed?",
+    title: "Can I change the delivery address after placing an order?",
     content:
-      " That's why we've compiled a list of frequently asked questions to help you get the answers you need quickly and easily. Whether you're curious about our range of services, need information on tracking your shipment, or want to understand.",
+      "Yes, you can request a change in the delivery address by contacting our support team before the shipment is dispatched. Additional charges may apply.",
   },
   {
     id: "5",
-    title: "What should I do if my shipment is delayed?",
+    title: "What items are prohibited from shipping?",
     content:
-      " That's why we've compiled a list of frequently asked questions to help you get the answers you need quickly and easily. Whether you're curious about our range of services, need information on tracking your shipment, or want to understand.",
+      "Certain items, such as hazardous materials, perishable goods, and illegal substances, are prohibited. Please review our list of restricted items for more details.",
   },
   {
     id: "6",
-    title: "What should I do if my shipment is delayed?",
+    title: "How do I file a claim for lost or damaged goods?",
     content:
-      " That's why we've compiled a list of frequently asked questions to help you get the answers you need quickly and easily. Whether you're curious about our range of services, need information on tracking your shipment, or want to understand.",
+      "To file a claim, please submit a claim form along with proof of shipment and any supporting documents. Our claims department will review and assist you promptly.",
   },
   {
     id: "7",
-    title: "What should I do if my shipment is delayed?",
+    title: "Do you offer insurance for shipments?",
     content:
-      " That's why we've compiled a list of frequently asked questions to help you get the answers you need quickly and easily. Whether you're curious about our range of services, need information on tracking your shipment, or want to understand.",
+      "Yes, we offer optional insurance coverage for shipments. This ensures your goods are protected against loss or damage during transit. Contact us for more information.",
   },
 ];
+
 
 export default function Questions() {
   const [expanded, setExpanded] = useState(questions[0].id); // Set the first accordion open by default

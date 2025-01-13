@@ -39,9 +39,9 @@ function HeroPages({ page, title }) {
     <Box
       sx={{
         maxWidth: "100%",
-        height: { xs: "35vh", md: "100vh" },
+        height: { xs: "40vh", md: "100vh" },
         position: "relative",
-        zIndex: 1,
+        zIndex: 3,
         backgroundColor: "#efeef3",
         overflow: "hidden",
       }}
@@ -68,6 +68,7 @@ function HeroPages({ page, title }) {
                 width: "200px",
                 display: { xs: "none", md: "inline-block" },
                 marginLeft: "-20px",
+                zIndex: 1
               }}
             >
               <Typography

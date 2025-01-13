@@ -20,21 +20,18 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const questions = [
   {
     id: "1",
-    title: "What should I do ?",
+    title: "Our Vision",
     content:
-      " That's why we've compiled a list of frequently asked questions to help you get the answers you need quickly and easily. Whether you're curious.",
-  },
+"To be the first choice for businesses in international shipping and logistics by offering reliable, integrated services worldwide."  },
   {
     id: "2",
-    title: "What should I do ?",
-    content:
-      " That's why we've compiled a list of frequently asked questions to help you get the answers you need quickly and easily. Whether you're curious.",
+    title: "Our Mission",
+    content:"To provide innovative and integrated shipping solutions that meet our client's needs while ensuring the highest levels of quality and efficiency."
   },
   {
     id: "3",
-    title: "What should I do ?",
-    content:
-      " That's why we've compiled a list of frequently asked questions to help you get the answers you need quickly and easily. Whether you're curious.",
+    title: "Our Services",
+    content:"Sea Freight: We provide reliable sea freight services through the largest global shipping lines, ensuring competitive rates and timely delivery to your destination."
   },
   {
     id: "4",
@@ -50,7 +47,7 @@ const blogs = [
     Image: img1,
     titleImg: "What should I do ?",
     title: "E-commerce & Logistics: Meeting the..",
-    Date: "14/7/2002",
+    Date: "14/7/2020",
   },
   {
     id: "2",
@@ -64,7 +61,7 @@ const blogs = [
     Image: img3,
     titleImg: "What should I do ?",
     title: "Project Logistics: Handling Large and C..",
-    Date: "24/1/2013",
+    Date: "24/1/2021",
   },
   {
     id: "4",
@@ -160,7 +157,7 @@ export default function LeftAppBar() {
             lineHeight: "16px",
             transition: ".3s",
             "&:hover": { backgroundColor: "black" },
-            width: "60%",
+            width: "50%",
           }}
           startIcon={
             <PhoneInTalkOutlinedIcon
@@ -175,8 +172,7 @@ export default function LeftAppBar() {
             />
           }
         >
-          +123 456 789
-        </Button>
++0222670614        </Button>
       </Stack>
       <Stack
         sx={{

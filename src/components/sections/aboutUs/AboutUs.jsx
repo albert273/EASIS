@@ -286,7 +286,7 @@ export default function AboutUs() {
           </Stack>
           <Stack
             justifyContent={"center"}
-            sx={{ marginX: "auto" }}
+            sx={{ marginX: "auto", width: "100%" }}
             alignItems={"center"}
             ref={downImgRef}
           >

@@ -126,9 +126,7 @@ function Footer() {
                 <Image src={logo} alt="logo" width={105} height={90} />
               </Box>
               <Typography>
-                {" "}
-                6 Ankara street , Sheraton Heliopolis ,<br /> District 4 ,
-                Heliopolis , Cairo,Egypt
+                62 El Obour Street, Sheraton, Cairo Airport, Cairo.
               </Typography>
               <Stack direction={"row"}>
                 <Box
@@ -291,23 +289,59 @@ function Footer() {
                       color: "black",
                       textTransform: "capitalize",
                       fontWeight: "bold",
-                      fontSize: "1.1rem"
-
+                      fontSize: "1.1rem",
                     }}
                   >
                     Fax number
                   </Typography>
-                  <Typography
-                    sx={{
-                      "&:hover": { color: "#1a237e", opacity: 1 },
-                      cursor: "pointer",
-                      fontWeight: "bold",
-                      color: "black",
-                      opacity: 0.7,
-                    }}
-                  >
-                    <a href="tel:(+202) 22679632">(+202) 22679632</a>
-                  </Typography>
+                  <Stack>
+                    <Stack direction={"row"}>
+                      <Typography
+                        sx={{
+                          "&:hover": { color: "#1a237e", opacity: 1 },
+                          cursor: "pointer",
+                          fontWeight: "bold",
+                          color: "black",
+                          opacity: 0.7,
+                        }}
+                      >
+                        <a href="tel:0222670614">0222 670 614</a>
+                      </Typography>
+                      <Typography
+                        sx={{
+                          marginX: 1, // Adds horizontal margin around the dash
+                          fontWeight: "bold",
+                          color: "black",
+                          opacity: 0.7,
+                        }}
+                      >
+                        -
+                      </Typography>
+                      <Typography
+                        sx={{
+                          "&:hover": { color: "#1a237e", opacity: 1 },
+                          cursor: "pointer",
+                          fontWeight: "bold",
+                          color: "black",
+                          opacity: 0.7,
+                        }}
+                      >
+                        <a href="tel:01022172922">0102 217 2922</a>
+                      </Typography>
+                    </Stack>
+
+                    <Typography
+                      sx={{
+                        "&:hover": { color: "#1a237e", opacity: 1 },
+                        cursor: "pointer",
+                        fontWeight: "bold",
+                        color: "black",
+                        opacity: 0.7,
+                      }}
+                    >
+                      <a href="tel:01022182922">0102 218 2922</a>
+                    </Typography>
+                  </Stack>
                 </Stack>
               </Stack>
 
@@ -317,10 +351,8 @@ function Footer() {
                 sx={{
                   borderBottom: "2px solid #616161",
                   paddingBottom: "20px",
-                  
                 }}
                 alignItems={"center"}
-
               >
                 <AlarmOnIcon sx={{ fontSize: "2rem", color: "#1a237e" }} />
                 <Stack>
@@ -329,7 +361,7 @@ function Footer() {
                       color: "black",
                       textTransform: "capitalize",
                       fontWeight: "bold",
-                      fontSize: "1.1rem"
+                      fontSize: "1.1rem",
                     }}
                   >
                     Working Hours
@@ -337,7 +369,8 @@ function Footer() {
                   <Typography
                     sx={{ fontWeight: "bold", color: "black", opacity: 0.7 }}
                   >
-                    Saturday to Thursday: <br/>9:00 AM - 5:00 PM
+                    Saturday to Thursday: <br />
+                    9:00 AM - 5:00 PM
                   </Typography>
                 </Stack>
               </Stack>
@@ -352,7 +385,7 @@ function Footer() {
                       color: "black",
                       textTransform: "capitalize",
                       fontWeight: "bold",
-                      fontSize: "1.1rem"
+                      fontSize: "1.1rem",
                     }}
                   >
                     Send Us Email
@@ -367,7 +400,7 @@ function Footer() {
                       opacity: 0.7,
                     }}
                   >
-                    <a href="mailto:gm@uni-cargo.net">gm@uni-cargo.net</a>
+                    <a href="mailto:overseas@easis.info">overseas@easis.info</a>
                   </Typography>
                 </Stack>
               </Stack>

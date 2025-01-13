@@ -13,11 +13,41 @@ import { gsap } from "gsap";
 function OurServices() {
   const [active, setActive] = useState("imag1");
   const images = [
-    { img: Image1, id: "1", title: "Image1" },
-    { img: Image2, id: "2", title: "Image2" },
-    { img: Image3, id: "3", title: "Image3" },
-    { img: Image1, id: "4", title: "Image4" },
-    { img: Image2, id: "5", title: "Image5" },
+    {
+      img: Image1,
+      id: "1",
+      title: "Image1",
+      titleText: "Freight Transportation",
+      content: `Moving goods from one location to another via air, sea, road, or rail. This includes domestic and international shipping.\nKey Features:\nFull Truckload (FTL) and Less-than-Truckload (LTL) services.\nExpedited shipping for time-sensitive deliveries.`,
+    },
+    {
+      img: Image2,
+      id: "2",
+      title: "Image2",
+      titleText: "Warehousing and Storage",
+      content: `Providing secure and efficient storage solutions for goods until they are ready for distribution.\nKey Features:\nTemperature-controlled warehouses for perishable goods.\nInventory management systems for real-time tracking.`,
+    },
+    {
+      img: Image3,
+      id: "3",
+      title: "Image3",
+      titleText: "Customs Clearance and Documentation",
+      content: `Handling the legal and administrative processes required for international shipping.\nKey Features:\nAssistance with import/export documentation.\nCompliance with customs regulations and duties.`,
+    },
+    {
+      img: Image1,
+      id: "4",
+      title: "Image4",
+      titleText: "Supply Chain Management",
+      content: `Offering end-to-end solutions to streamline the supply chain process.\nKey Features:\nDemand planning and forecasting.\nVendor and inventory management.\nOptimization of logistics networks for cost efficiency.`,
+    },
+    {
+      img: Image2,
+      id: "5",
+      title: "Image5",
+      titleText: "Last-Mile Delivery",
+      content: `Ensuring goods are delivered to the final destination, often directly to customers.\nKey Features:\nReal-time tracking and updates for customers.\nDelivery to urban and remote areas.\nOptions for contactless or scheduled deliveries.`,
+    },
   ];
   const topRef = useRef(null);
   const sectionRef = useRef(null);
@@ -218,7 +248,7 @@ function OurServices() {
                     display: "flex",
                     flexDirection: "column",
                     borderRadius: "15px",
-                    padding: "48px 32px",
+                    padding: "22px 32px",
                     userSelect: "none",
                     // Keep the border radius
                   }}
@@ -249,11 +279,11 @@ function OurServices() {
                       lineHeight: "20px",
                       fontWeight: 600,
                       color: "#fff",
-                      marginTop: "32px",
+                      marginTop: "22px",
                       marginBottom: "16px",
                     }}
                   >
-                    Supply chain management
+                    {image.titleText}
                   </Typography>
                   <Typography
                     sx={{
@@ -264,9 +294,12 @@ function OurServices() {
                       opacity: 0.8,
                     }}
                   >
-                    From freight forwarding & customs brokerage to warehousing
-                    solutions and supply chain management, our expertise ensures
-                    that your logistics operations are seamless and efficient.
+                    {image.content.split("\n").map((line, index) => (
+                      <React.Fragment key={index}>
+                        {line}
+                        <br />
+                      </React.Fragment>
+                    ))}
                   </Typography>
                 </Box>
               </Box>

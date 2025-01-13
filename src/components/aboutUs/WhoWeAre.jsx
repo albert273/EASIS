@@ -67,7 +67,7 @@ export default function WhatWeDo() {
               backgroundColor: "#1a237e",
               color: "white",
               position: "absolute",
-              top: 150,
+              bottom: 80,
               right: -40,
               display: { xs: "none", md: "flex" },
             }}
@@ -82,13 +82,14 @@ export default function WhatWeDo() {
               </Typography>
             </Stack>
           </Stack>
-          <Box
+          <Stack
             sx={{
-              width: { xs: 380, md: 500 }, // Adjust widths for breakpoints
-              height: { xs: 380, md: 500 }, // Adjust heights for breakpoints
+              width: { xs: 330, md: 500 }, // Adjust widths for breakpoints
+              height: { xs: 330, md: 500 }, // Adjust heights for breakpoints
               borderRadius: "7px",
               overflow: "hidden",
-              marginX: "auto", // Ensures the image respects the border radius
+              marginX: "auto", 
+              justifyContent: "center"
             }}
           >
             <Image
@@ -99,7 +100,7 @@ export default function WhatWeDo() {
               width={500}
               height={500}
             />
-          </Box>
+          </Stack>
         </Stack>
         <Stack ref={rightRef}>
           <Box
