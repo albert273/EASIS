@@ -2,10 +2,10 @@
 import { Box, Container, Grid, Stack, Typography, Button } from "@mui/material";
 import React, { useRef, useEffect } from "react";
 import Image from "next/image";
-import image1 from "../../../../public/images/section1/ca-about-3.3.png";
-import image2 from "../../../../public/images/section1/ca-about3.1.png";
-import image3 from "../../../../public/images/section1/ca-blog-1.3.png";
-import image4 from "../../../../public/images/section1/ca-blog-4.2.png";
+import image1 from "../../../../public/images/section1/image1.jpg";
+import image2 from "../../../../public/images/section1/image2.jpg";
+import image3 from "../../../../public/images/section1/image3.jpg";
+import image4 from "../../../../public/images/section1/image4.jpg";
 
 import CheckIcon from "@mui/icons-material/Check";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";

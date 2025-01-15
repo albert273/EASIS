@@ -10,7 +10,6 @@ import {
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import img from "../../../../public/images/section1/ca-testi3.2.png";
 import MediaCard from "../../mediaCard/MediaCard";
 
 function Testimonial() {
@@ -25,7 +24,7 @@ function Testimonial() {
         "Discover how our innovative solutions transformed logistics for our clients",
       description:
         "We are committed to delivering exceptional service, ensuring our clients' logistics needs are met with precision and care. Our tailored strategies have enabled businesses to thrive in a competitive environment.",
-      user: { image: img, username: "Ali Ahmed" },
+      user: { image: "", username: "Ali Ahmed" },
     },
     {
       id: "2",
@@ -33,7 +32,7 @@ function Testimonial() {
         "See how we help businesses streamline their supply chain operations",
       description:
         "By understanding our clients' unique challenges, we provide customized solutions that improve efficiency and reduce costs. Their success stories inspire us to continue delivering excellence.",
-      user: { image: img, username: "John Ashrf" },
+      user: { image: "", username: "John Ashrf" },
     },
     {
       id: "3",
@@ -41,7 +40,7 @@ function Testimonial() {
         "Learn how our expertise in logistics ensures timely and reliable delivery",
       description:
         "Our focus on reliability and accuracy has earned us the trust of businesses worldwide. We are proud to be a part of their journey toward growth and success.",
-      user: { image: img, username: "Sophia Bennett" },
+      user: { image: "", username: "Sophia Bennett" },
     },
     {
       id: "4",
@@ -49,7 +48,7 @@ function Testimonial() {
         "Explore how our technology-driven approach enhances logistics efficiency",
       description:
         "Through advanced technology and innovative practices, we have helped businesses optimize their operations and achieve remarkable results. Client satisfaction remains at the heart of what we do.",
-      user: { image: img, username: "Mohamed ahmed" },
+      user: { image: "", username: "Mohamed ahmed" },
     },
     {
       id: "5",
@@ -57,7 +56,7 @@ function Testimonial() {
         "Find out how our customer-centric approach creates lasting partnerships",
       description:
         "We believe in building long-term relationships with our clients by understanding their needs and exceeding their expectations. Their positive feedback is a testament to our dedication.",
-      user: { image: img, username: "Zain" },
+      user: { image: "", username: "Zain" },
     },
     {
       id: "6",
@@ -65,7 +64,7 @@ function Testimonial() {
         "Read about how our tailored solutions drive business growth and success",
       description:
         "Our comprehensive logistics services empower businesses to focus on their core strengths while we handle their transport and supply chain needs with excellence.",
-      user: { image: img, username: "Mazen Montaser" },
+      user: { image: "", username: "Mazen Montaser" },
     },
   ];
 

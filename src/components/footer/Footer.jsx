@@ -12,7 +12,7 @@ import FaxIcon from "@mui/icons-material/Fax";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import logo from "../../../public/logo.png";
 import Image from "next/image";
-
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 const buttons = [
   { id: "1", title: "Home", link: "/" },
   { id: "2", title: "About us", link: "About" },
@@ -125,9 +125,6 @@ function Footer() {
               <Box>
                 <Image src={logo} alt="logo" width={105} height={90} />
               </Box>
-              <Typography>
-                62 El Obour Street, Sheraton, Cairo Airport, Cairo.
-              </Typography>
               <Stack direction={"row"}>
                 <Box
                   sx={{
@@ -375,7 +372,15 @@ function Footer() {
                 </Stack>
               </Stack>
 
-              <Stack direction={"row"} gap={2}>
+              <Stack
+                direction={"row"}
+                gap={2}
+                alignItems={"center"}
+                sx={{
+                  borderBottom: "2px solid #616161",
+                  paddingBottom: "20px",
+                }}
+              >
                 <AlternateEmailIcon
                   sx={{ fontSize: "2rem", color: "#1a237e" }}
                 />
@@ -401,6 +406,36 @@ function Footer() {
                     }}
                   >
                     <a href="mailto:overseas@easis.info">overseas@easis.info</a>
+                  </Typography>
+                </Stack>
+              </Stack>
+              <Stack direction={"row"} gap={2} alignItems={"center"}>
+                <LocationOnIcon
+                  sx={{ fontSize: "2rem", color: "#1a237e" }}
+                />
+                <Stack>
+                  <Typography
+                    sx={{
+                      color: "black",
+                      textTransform: "capitalize",
+                      fontWeight: "bold",
+                      fontSize: "1.1rem",
+                    }}
+                  >
+                    Location
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontWeight: "bold",
+                      "&:hover": { color: "#1a237e", opacity: 1 },
+                      cursor: "pointer",
+                      fontSize: "1.1rem",
+                      color: "black",
+                      opacity: 0.7,
+                    }}
+                  >
+                    62 El Obour Street, Sheraton,
+                    <br /> Cairo Airport, Cairo.
                   </Typography>
                 </Stack>
               </Stack>

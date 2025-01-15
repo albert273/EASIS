@@ -161,6 +161,12 @@ function OurProjects() {
                   position: "relative",
                   overflow: "hidden",
                   transition: "all 0.5s",
+                  width: {
+                    xs: "100%", // Full width on extra-small screens
+                    sm: "calc(50% - 20px)", // Adjust for small screens
+                    md: "calc(33.33% - 20px)", // Adjust for medium screens
+                    lg: "calc(22% - 20px)", // Adjust for large screens
+                  },
                   "&:hover .hoverContent": {
                     height: "85%",
                     top: 28, // Move the box to the top
@@ -287,6 +293,12 @@ function OurProjects() {
                   position: "relative",
                   overflow: "hidden",
                   transition: "all 0.5s",
+                  width: {
+                    xs: "100%", // Full width on extra-small screens
+                    sm: "calc(50% - 20px)", // Adjust for small screens
+                    md: "calc(33.33% - 20px)", // Adjust for medium screens
+                    lg: "calc(30% - 20px)", // Adjust for large screens
+                  },
                   "&:hover .hoverContent": {
                     height: "85%",
                     top: 28, // Move the box to the top
@@ -414,6 +426,12 @@ function OurProjects() {
                   position: "relative",
                   overflow: "hidden",
                   transition: "all 0.5s",
+                  width: {
+                    xs: "100%", // Full width on extra-small screens
+                    sm: "calc(50% - 20px)", // Adjust for small screens
+                    md: "calc(33.33% - 20px)", // Adjust for medium screens
+                    lg: "calc(38% - 20px)", // Adjust for large screens
+                  },
                   "&:hover .hoverContent": {
                     height: "85%",
                     top: 28, // Move the box to the top
@@ -534,6 +552,8 @@ function OurProjects() {
               justifyContent={"center"}
               gap={1}
               alignItems={"center"}
+              sx={{ width: "100%" }}
+
             >
               <Box
                 ref={image4Ref}
