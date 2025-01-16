@@ -2,9 +2,11 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
-import Image1 from "../../../../public/images/section2/ca-expand-gallery3.1.png";
-import Image2 from "../../../../public/images/section2/ca-expand-gallery3.2.png";
-import Image3 from "../../../../public/images/section2/ca-expand-gallery3.3.png";
+import Image1 from "../../../../public/images/section2/img1.jpg";
+import Image2 from "../../../../public/images/section2/img2.jpg";
+import Image3 from "../../../../public/images/section2/img3.jpg";
+import Image4 from "../../../../public/images/section2/img4.jpg";
+import Image5 from "../../../../public/images/section2/img5.avif"
 import animation1 from "../../../../public/images/section2/shape-1.1.png";
 import animation2 from "../../../../public/images/section2/shape-1.2.png";
 import PublicTwoToneIcon from "@mui/icons-material/PublicTwoTone";
@@ -35,14 +37,14 @@ function OurServices() {
       content: `Handling the legal and administrative processes required for international shipping.\nKey Features:\nAssistance with import/export documentation.\nCompliance with customs regulations and duties.`,
     },
     {
-      img: Image1,
+      img: Image4,
       id: "4",
       title: "Image4",
       titleText: "Supply Chain Management",
       content: `Offering end-to-end solutions to streamline the supply chain process.\nKey Features:\nDemand planning and forecasting.\nVendor and inventory management.\nOptimization of logistics networks for cost efficiency.`,
     },
     {
-      img: Image2,
+      img: Image5,
       id: "5",
       title: "Image5",
       titleText: "Last-Mile Delivery",

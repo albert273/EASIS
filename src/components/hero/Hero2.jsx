@@ -149,6 +149,7 @@ function Hero2() {
                     color: "black",
                     borderLeft: "solid 4px #1a237e",
                     paddingLeft: "16px",
+                    fontWeight: "bold"
                   }}
                 >
                   EASIS & Logistics
@@ -262,7 +263,7 @@ function Hero2() {
         </Stack>
       ) : (
         <Stack
-          sx={{ height: "75vh", width: "100%", bgcolor: "#283593" }}
+          sx={{ height: "70vh", width: "100%", bgcolor: "#283593" }}
           alignItems={"center"}
         >
           <Stack
@@ -288,6 +289,7 @@ function Hero2() {
                   color: "black",
                   borderLeft: "solid 4px #1a237e",
                   paddingLeft: "16px",
+                  fontWeight: "bold"
                 }}
               >
                 EASIS & Logistics

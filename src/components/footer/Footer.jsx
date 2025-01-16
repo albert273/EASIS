@@ -12,7 +12,7 @@ import FaxIcon from "@mui/icons-material/Fax";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import logo from "../../../public/logo.png";
 import Image from "next/image";
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 const buttons = [
   { id: "1", title: "Home", link: "/" },
   { id: "2", title: "About us", link: "About" },
@@ -326,18 +326,40 @@ function Footer() {
                         <a href="tel:01022172922">0102 217 2922</a>
                       </Typography>
                     </Stack>
-
-                    <Typography
-                      sx={{
-                        "&:hover": { color: "#1a237e", opacity: 1 },
-                        cursor: "pointer",
-                        fontWeight: "bold",
-                        color: "black",
-                        opacity: 0.7,
-                      }}
-                    >
-                      <a href="tel:01022182922">0102 218 2922</a>
-                    </Typography>
+                    <Stack direction={"row"}>
+                      <Typography
+                        sx={{
+                          "&:hover": { color: "#1a237e", opacity: 1 },
+                          cursor: "pointer",
+                          fontWeight: "bold",
+                          color: "black",
+                          opacity: 0.7,
+                        }}
+                      >
+                        <a href="tel:01022182922">0102 218 2922</a>
+                      </Typography>
+                      <Typography
+                        sx={{
+                          marginX: 1, // Adds horizontal margin around the dash
+                          fontWeight: "bold",
+                          color: "black",
+                          opacity: 0.7,
+                        }}
+                      >
+                        -
+                      </Typography>
+                      <Typography
+                        sx={{
+                          "&:hover": { color: "#1a237e", opacity: 1 },
+                          cursor: "pointer",
+                          fontWeight: "bold",
+                          color: "black",
+                          opacity: 0.7,
+                        }}
+                      >
+                        <a href="tel:01143314965">0114 331 4965</a>
+                      </Typography>
+                    </Stack>
                   </Stack>
                 </Stack>
               </Stack>
@@ -410,9 +432,7 @@ function Footer() {
                 </Stack>
               </Stack>
               <Stack direction={"row"} gap={2} alignItems={"center"}>
-                <LocationOnIcon
-                  sx={{ fontSize: "2rem", color: "#1a237e" }}
-                />
+                <LocationOnIcon sx={{ fontSize: "2rem", color: "#1a237e" }} />
                 <Stack>
                   <Typography
                     sx={{
