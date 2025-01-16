@@ -263,7 +263,7 @@ function Hero2() {
         </Stack>
       ) : (
         <Stack
-          sx={{ height: "70vh", width: "100%", bgcolor: "#283593" }}
+          sx={{ height: "60vh", width: "100%", bgcolor: "#283593" }}
           alignItems={"center"}
         >
           <Stack

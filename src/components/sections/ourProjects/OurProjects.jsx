@@ -404,7 +404,8 @@ function OurProjects() {
                       textAlign: "center",
                     }}
                   >
-                    Discover how our expertise in global freight management has simplified cross-border logistics for businesses worldwide.
+                    Discover how our expertise in global freight management has
+                    simplified cross-border logistics for businesses worldwide.
                   </Typography>
                 </Box>
               </Box>
@@ -534,7 +535,9 @@ function OurProjects() {
                       textAlign: "center",
                     }}
                   >
-                    Learn how we have streamlined inventory management and reduced costs for our clients through advanced warehousing solutions.
+                    Learn how we have streamlined inventory management and
+                    reduced costs for our clients through advanced warehousing
+                    solutions.
                   </Typography>
                 </Box>
               </Box>
@@ -558,6 +561,10 @@ function OurProjects() {
                   position: "relative",
                   overflow: "hidden",
                   transition: "all 0.5s",
+                  width: {
+                    xs: "100%", // Full width on extra-small screens
+                    md: "calc(45% - 20px)", // Adjust for medium screens
+                  },
                   "&:hover .hoverContent": {
                     height: "55%",
                     top: "23%", // Move the box to the top
@@ -667,7 +674,8 @@ function OurProjects() {
                       textAlign: "center",
                     }}
                   >
-                    Explore how we ensure timely and reliable deliveries to the final destination, enhancing customer satisfaction.
+                    Explore how we ensure timely and reliable deliveries to the
+                    final destination, enhancing customer satisfaction.
                   </Typography>
                 </Box>
               </Box>
@@ -683,6 +691,10 @@ function OurProjects() {
                   position: "relative",
                   overflow: "hidden",
                   transition: "all 0.5s",
+                  width: {
+                    xs: "100%", // Full width on extra-small screens
+                    md: "calc(45% - 20px)", // Adjust for medium screens
+                  },
                   "&:hover .hoverContent": {
                     height: "55%",
                     top: "23%", // Move the box to the top
@@ -792,7 +804,8 @@ function OurProjects() {
                       textAlign: "center",
                     }}
                   >
-                    Discover how we connect every link in the supply chain to deliver seamless and transparent logistics solutions.
+                    Discover how we connect every link in the supply chain to
+                    deliver seamless and transparent logistics solutions.
                   </Typography>
                 </Box>
               </Box>

@@ -6,16 +6,28 @@ import { Box } from "@mui/material";
 import WhyChooseUs from "@/components/sections/WhyChooseUs/WhyChooseUs";
 import OurProjects from "@/components/sections/ourProjects/OurProjects";
 
-
 export default function Home() {
   return (
     <Box>
       <Hero2 />
-      <AboutUs />
-      <WhyChooseUs />
-      <OurServices/>
-      <OurProjects />
-      <Testimonial />
+      <Box id={"AboutUs"}>
+        <AboutUs />
+      </Box>
+      <Box id={"WhyChooseUs"}>
+        <WhyChooseUs />
+      </Box>
+      <Box id={"OurServices"}>
+        {" "}
+        <OurServices />
+      </Box>
+      <Box id={"OurProjects"}>
+        {" "}
+        <OurProjects />
+      </Box>
+      <Box id={"Testimonial"}>
+        {" "}
+        <Testimonial />
+      </Box>
     </Box>
   );
 }

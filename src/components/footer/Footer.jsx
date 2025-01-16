@@ -22,11 +22,11 @@ const buttons = [
 ];
 
 const otherLinks = [
-  { id: "1", title: "Maintenance", link: "/" },
-  { id: "2", title: "Our Team", link: "About" },
-  { id: "3", title: "Reviews & Awards", link: "Services" },
-  { id: "4", title: "Personal", link: "/" },
-  { id: "5", title: "Certifications", link: "/" },
+  { id: "1", title: "About us", link: "#AboutUs" },
+  { id: "2", title: "Why Choose Us", link: "#WhyChooseUs" },
+  { id: "3", title: "Our Service", link: "#OurServices" },
+  { id: "4", title: "Our Projects", link: "#OurProjects" },
+  { id: "5", title: "What people say about us", link: "#Testimonial" },
 ];
 function Footer() {
   return (
@@ -292,7 +292,7 @@ function Footer() {
                     Fax number
                   </Typography>
                   <Stack>
-                    <Stack direction={"row"}>
+                    <Stack direction={{xs:"column", md:"row"}}>
                       <Typography
                         sx={{
                           "&:hover": { color: "#1a237e", opacity: 1 },
@@ -310,6 +310,7 @@ function Footer() {
                           fontWeight: "bold",
                           color: "black",
                           opacity: 0.7,
+                          display: {xs:"none", md: "block"}
                         }}
                       >
                         -
@@ -326,7 +327,7 @@ function Footer() {
                         <a href="tel:01022172922">0102 217 2922</a>
                       </Typography>
                     </Stack>
-                    <Stack direction={"row"}>
+                    <Stack direction={{xs:"column", md:"row"}}>
                       <Typography
                         sx={{
                           "&:hover": { color: "#1a237e", opacity: 1 },
@@ -344,6 +345,7 @@ function Footer() {
                           fontWeight: "bold",
                           color: "black",
                           opacity: 0.7,
+                          display: {xs:"none", md: "block"}
                         }}
                       >
                         -
