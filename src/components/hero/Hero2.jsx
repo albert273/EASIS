@@ -1,14 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import {
-  Box,
-  Breadcrumbs,
-  Button,
-  Stack,
-  Typography,
-  useMediaQuery,
-} from "@mui/material";
+import { Box, Button, Stack, Typography, useMediaQuery } from "@mui/material";
 import img1 from "../../../public/images/hero/hero1.png";
 import img2 from "../../../public/images/hero/truck-hero-1.jpg";
 import img3 from "../../../public/images/hero/hero1-shape.png";
@@ -26,6 +19,7 @@ function Hero2() {
   const sectionRef = useRef(null);
   const animationRef = useRef(null);
   const isLargeScreen = useMediaQuery("(min-width:1200px)");
+  const sizeScreen = useMediaQuery("(min-width: 600px)"); // Adjust breakpoint as needed
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -108,161 +102,289 @@ function Hero2() {
   }, []);
 
   return (
-    <Stack
-      direction={"row"}
-      sx={{
-        width: "100%",
-        position: "relative",
-        overflow: "hidden",
-        maxHeight: "100vh",
-      }}
-    >
-      <Stack sx={{ zIndex: 20, position: "relative" }}>
-        <Image
-          loading="lazy"
-          src={img1}
-          alt="hero"
-          width={isLargeScreen ? "115%" : "120%"} // Adjust width based on screen size
-          height={670} // Fixed height
-          style={{ width: isLargeScreen ? "115%" : "120%" }}
-          ref={img1Ref} // Reference for animation
-        />
+    <Box>
+      {sizeScreen ? (
         <Stack
+          direction={"row"}
           sx={{
-            position: "absolute",
-            top: "150px",
-            left: { xs: "50px", md: "110px" },
-            zIndex: 5,
+            width: "100%",
+            position: "relative",
+            overflow: "hidden",
+            maxHeight: "100vh",
           }}
-          gap={3}
-          ref={sectionRef}
         >
-          <Box
-            sx={{
-              padding: "8px 12px",
-              backgroundColor: "#e8eaf62e",
-              paddingLeft: "22px",
-              borderRadius: "50px",
-              width: "200px",
-            }}
-            ref={topRef}
-          >
-            <Typography
-              variant="subtitle1"
+          <Stack sx={{ zIndex: 20, position: "relative" }}>
+            <Image
+              loading="lazy"
+              src={img1}
+              alt="hero"
+              width={isLargeScreen ? "70%" : "100%"} // Adjust width based on screen size
+              height={670} // Fixed height
+              style={{ width: isLargeScreen ? "90%" : "100%" }}
+              ref={img1Ref} // Reference for animation
+            />
+            <Stack
               sx={{
-                color: "#fff",
-                borderLeft: "solid 4px #1a237e",
-                paddingLeft: "16px",
+                position: "absolute",
+                top: "150px",
+                left: { xs: "50px", md: "110px" },
+                zIndex: 5,
               }}
+              gap={3}
+              ref={sectionRef}
             >
-              EASIS & Logistics
-            </Typography>
-          </Box>
-          <Typography
-            sx={{
-              fontSize: { xs: "25px", md: "35px" },
-              lineHeight: { xs: "40px", md: "45px" },
-              fontWeight: "bold",
-              color: "#fff",
-              marginBottom: "20px"
-            }}
-            ref={leftTypographyRef}
-          >
-            EASIS - Egypt Air and Sea for International Shipping. Integrated
-            Solutions for International Shipping & Logistics.
-          </Typography>
-
-          <Stack direction={"row"} gap={2} ref={bottomRef}>
-            <Link href={"/MakeQuote"}>
-              <Button
-                variant="contained"
+              <Box
                 sx={{
-                  textTransform: "capitalize",
+                  padding: "8px 12px",
+                  backgroundColor: "#e8eaf62e",
+                  paddingLeft: "22px",
                   borderRadius: "50px",
-                  backgroundColor: "#1a237e",
-                  padding: "10px 16px",
-                  fontWeight: "bold",
-                  fontSize: "16ps",
-                  lineHeight: "16px",
-                  transition: ".3s",
-                  "&:hover": { backgroundColor: "black" },
+                  width: "200px",
                 }}
-                endIcon={
-                  <KeyboardArrowRightIcon
-                    sx={{
-                      height: "32px",
-                      width: "32px",
-                      lineHeight: "32",
-                      marginLeft: "6px",
-                      borderRadius: "50%",
-                      backgroundColor: "#1a237e",
-                    }}
-                  />
-                }
+                ref={topRef}
               >
-                Get Started
-              </Button>
-            </Link>
-
-            <Link href={"/"}>
-              <Button
-                variant="contained"
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    color: "black",
+                    borderLeft: "solid 4px #1a237e",
+                    paddingLeft: "16px",
+                  }}
+                >
+                  EASIS & Logistics
+                </Typography>
+              </Box>
+              <Typography
                 sx={{
-                  textTransform: "capitalize",
-                  color: "#1a237e",
-                  borderRadius: "50px",
-                  backgroundColor: "#efeef3",
-                  padding: "10px 16px",
+                  fontSize: { xs: "25px", md: "35px" },
+                  lineHeight: { xs: "40px", md: "45px" },
                   fontWeight: "bold",
-                  fontSize: "16ps",
-                  lineHeight: "16px",
-                  transition: ".3s",
-                  border: "1px solid #1a237e",
-                  "&:hover": { backgroundColor: "#1a237e", color: "white" },
+                  color: "#fff",
+                  marginBottom: "20px",
+                  width: "70%",
                 }}
-                endIcon={
-                  <KeyboardArrowRightIcon
-                    sx={{
-                      height: "32px",
-                      width: "32px",
-                      lineHeight: "32",
-                      marginLeft: "6px",
-                      borderRadius: "50%",
-                      backgroundColor: "#1a237e",
-                      color: "white",
-                    }}
-                  />
-                }
+                ref={leftTypographyRef}
               >
-                Discover more
-              </Button>
-            </Link>
+                EASIS - Egypt Air and Sea for International Shipping. Integrated
+                Solutions for International Shipping & Logistics.
+              </Typography>
+
+              <Stack direction={"row"} gap={2} ref={bottomRef}>
+                <Link href={"/MakeQuote"}>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      textTransform: "capitalize",
+                      borderRadius: "50px",
+                      backgroundColor: "#1a237e",
+                      padding: "10px 16px",
+                      fontWeight: "bold",
+                      fontSize: "16ps",
+                      lineHeight: "16px",
+                      transition: ".3s",
+                      "&:hover": { backgroundColor: "black" },
+                    }}
+                    endIcon={
+                      <KeyboardArrowRightIcon
+                        sx={{
+                          height: "32px",
+                          width: "32px",
+                          lineHeight: "32",
+                          marginLeft: "6px",
+                          borderRadius: "50%",
+                          backgroundColor: "#1a237e",
+                        }}
+                      />
+                    }
+                  >
+                    Get Started
+                  </Button>
+                </Link>
+
+                <Link href={"/"}>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      textTransform: "capitalize",
+                      color: "#1a237e",
+                      borderRadius: "50px",
+                      backgroundColor: "#efeef3",
+                      padding: "10px 16px",
+                      fontWeight: "bold",
+                      fontSize: "16ps",
+                      lineHeight: "16px",
+                      transition: ".3s",
+                      border: "1px solid #1a237e",
+                      "&:hover": { backgroundColor: "#1a237e", color: "white" },
+                    }}
+                    endIcon={
+                      <KeyboardArrowRightIcon
+                        sx={{
+                          height: "32px",
+                          width: "32px",
+                          lineHeight: "32",
+                          marginLeft: "6px",
+                          borderRadius: "50%",
+                          backgroundColor: "#1a237e",
+                          color: "white",
+                        }}
+                      />
+                    }
+                  >
+                    Discover more
+                  </Button>
+                </Link>
+              </Stack>
+            </Stack>
+            <Box
+              sx={{ position: "absolute", bottom: 10, left: 0 }}
+              ref={animationRef}
+            >
+              <Image
+                src={img3}
+                alt="img3"
+                width={200}
+                height={150}
+                loading="lazy"
+              />
+            </Box>
+          </Stack>
+          <Stack sx={{ position: "absolute", zIndex: 1, bottom: 0, right: 0 }}>
+            <Image
+              loading="lazy"
+              src={img2}
+              alt="hero"
+              width={850}
+              height={670}
+              ref={img2Ref} // Reference for animation
+            />
           </Stack>
         </Stack>
-        <Box
-          sx={{ position: "absolute", bottom: 10, left: 0 }}
-          ref={animationRef}
+      ) : (
+        <Stack
+          sx={{ height: "75vh", width: "100%", bgcolor: "#283593" }}
+          alignItems={"center"}
         >
-          <Image
-            src={img3}
-            alt="img3"
-            width={200}
-            height={150}
-            loading="lazy"
-          />
-        </Box>
-      </Stack>
-      <Stack sx={{ position: "absolute", zIndex: 1, bottom: 0, right: 0 }}>
-        <Image
-          loading="lazy"
-          src={img2}
-          alt="hero"
-          width={850}
-          height={670}
-          ref={img2Ref} // Reference for animation
-        />
-      </Stack>
-    </Stack>
+          <Stack
+            gap={3}
+            ref={sectionRef}
+            justifyContent={"center"}
+            sx={{ marginTop: "140px" }}
+          >
+            <Box
+              sx={{
+                padding: "8px 12px",
+                backgroundColor: "#e8eaf62e",
+                paddingLeft: "22px",
+                borderRadius: "50px",
+                width: "200px",
+                marginX: "auto",
+              }}
+              ref={topRef}
+            >
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  color: "black",
+                  borderLeft: "solid 4px #1a237e",
+                  paddingLeft: "16px",
+                }}
+              >
+                EASIS & Logistics
+              </Typography>
+            </Box>
+            <Typography
+              sx={{
+                fontSize: { xs: "20px", md: "35px" },
+                lineHeight: { xs: "28px", md: "45px" },
+                fontWeight: "bold",
+                color: "#fff",
+                marginBottom: "20px",
+                width: "70%",
+                textAlign: "center",
+                marginX: "auto",
+              }}
+              ref={leftTypographyRef}
+            >
+              EASIS - Egypt Air and Sea for International Shipping. Integrated
+              Solutions for International Shipping & Logistics.
+            </Typography>
+
+            <Stack
+              direction={"row"}
+              gap={2}
+              ref={bottomRef}
+              sx={{ marginX: "auto" }}
+            >
+              <Link href={"/MakeQuote"}>
+                <Button
+                  variant="contained"
+                  sx={{
+                    textTransform: "capitalize",
+                    borderRadius: "50px",
+                    backgroundColor: "#1a237e",
+                    padding: "10px 16px",
+                    fontWeight: "bold",
+                    fontSize: "16ps",
+                    lineHeight: "16px",
+                    transition: ".3s",
+                    "&:hover": { backgroundColor: "black" },
+                  }}
+                  endIcon={
+                    <KeyboardArrowRightIcon
+                      sx={{
+                        height: "32px",
+                        width: "32px",
+                        lineHeight: "32",
+                        marginLeft: "6px",
+                        borderRadius: "50%",
+                        backgroundColor: "#1a237e",
+                      }}
+                    />
+                  }
+                >
+                  Get Started
+                </Button>
+              </Link>
+
+              <Link href={"/"}>
+                <Button
+                  variant="contained"
+                  sx={{
+                    textTransform: "capitalize",
+                    color: "#1a237e",
+                    borderRadius: "50px",
+                    backgroundColor: "#efeef3",
+                    padding: "10px 16px",
+                    fontWeight: "bold",
+                    fontSize: "16ps",
+                    lineHeight: "16px",
+                    transition: ".3s",
+                    border: "1px solid #1a237e",
+                    "&:hover": { backgroundColor: "#1a237e", color: "white" },
+                  }}
+                  endIcon={
+                    <KeyboardArrowRightIcon
+                      sx={{
+                        height: "32px",
+                        width: "32px",
+                        lineHeight: "32",
+                        marginLeft: "6px",
+                        borderRadius: "50%",
+                        backgroundColor: "#1a237e",
+                        color: "white",
+                      }}
+                    />
+                  }
+                >
+                  Discover more
+                </Button>
+              </Link>
+            </Stack>
+          </Stack>
+        </Stack>
+      )}
+    </Box>
   );
 }
 

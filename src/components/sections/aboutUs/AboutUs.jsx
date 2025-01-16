@@ -168,7 +168,7 @@ export default function AboutUs() {
     <Container
       maxWidth={false}
       sx={{
-        paddingTop: "80px",
+        paddingTop: "20px",
         maxWidth: { xs: "100%", md: "85%" },
         margin: "60px auto",
       }}
@@ -199,7 +199,7 @@ export default function AboutUs() {
           About Us
         </Typography>
       </Box>
-      <Stack gap={6}>
+      <Stack gap={1} alignItems={"center"}>
         <Stack
           direction={{ xs: "column", md: "row" }}
           alignItems={"center"}
@@ -234,7 +234,7 @@ export default function AboutUs() {
           direction={{ xs: "column", lg: "row" }}
           justifyContent={"center"}
           alignItems={"center"}
-          gap={4}
+          gap={1}
         >
           <Stack
             justifyContent={"center"}
@@ -286,7 +286,7 @@ export default function AboutUs() {
           </Stack>
           <Stack
             justifyContent={"center"}
-            sx={{ marginX: "auto", width: "100%" }}
+            sx={{ width: "100%" }}
             alignItems={"center"}
             ref={downImgRef}
           >

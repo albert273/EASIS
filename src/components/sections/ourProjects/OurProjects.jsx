@@ -163,9 +163,7 @@ function OurProjects() {
                   transition: "all 0.5s",
                   width: {
                     xs: "100%", // Full width on extra-small screens
-                    sm: "calc(50% - 20px)", // Adjust for small screens
-                    md: "calc(33.33% - 20px)", // Adjust for medium screens
-                    lg: "calc(22% - 20px)", // Adjust for large screens
+                    md: "calc(23% - 20px)", // Adjust for medium screens
                   },
                   "&:hover .hoverContent": {
                     height: "85%",
@@ -247,7 +245,7 @@ function OurProjects() {
                       marginTop: "28px",
                     }}
                   >
-                    Transportation
+                    Cold Chain Logistics
                   </Typography>
                   <Typography
                     variant="h4"
@@ -263,7 +261,7 @@ function OurProjects() {
                       textAlign: "center",
                     }}
                   >
-                    Customs Clearance Excellence
+                    Preserving Freshness and Quality
                   </Typography>
                   <Typography
                     sx={{
@@ -275,8 +273,8 @@ function OurProjects() {
                       textAlign: "center",
                     }}
                   >
-                    Explore our case studies achievements to see how we have
-                    transformed.
+                    Explore our innovative cold chain solutions that maintain
+                    product integrity from origin to destination.
                   </Typography>
                 </Box>
               </Box>
@@ -295,9 +293,7 @@ function OurProjects() {
                   transition: "all 0.5s",
                   width: {
                     xs: "100%", // Full width on extra-small screens
-                    sm: "calc(50% - 20px)", // Adjust for small screens
-                    md: "calc(33.33% - 20px)", // Adjust for medium screens
-                    lg: "calc(30% - 20px)", // Adjust for large screens
+                    md: "calc(31% - 20px)", // Adjust for medium screens
                   },
                   "&:hover .hoverContent": {
                     height: "85%",
@@ -380,7 +376,7 @@ function OurProjects() {
                       marginTop: "28px",
                     }}
                   >
-                    Transportation
+                    Global Freight Solutions
                   </Typography>
                   <Typography
                     variant="h4"
@@ -396,7 +392,7 @@ function OurProjects() {
                       textAlign: "center",
                     }}
                   >
-                    Customs Clearance Excellence
+                    Seamless International Shipping
                   </Typography>
                   <Typography
                     sx={{
@@ -408,8 +404,7 @@ function OurProjects() {
                       textAlign: "center",
                     }}
                   >
-                    Explore our case studies achievements to see how we have
-                    transformed.
+                    Discover how our expertise in global freight management has simplified cross-border logistics for businesses worldwide.
                   </Typography>
                 </Box>
               </Box>
@@ -428,9 +423,7 @@ function OurProjects() {
                   transition: "all 0.5s",
                   width: {
                     xs: "100%", // Full width on extra-small screens
-                    sm: "calc(50% - 20px)", // Adjust for small screens
-                    md: "calc(33.33% - 20px)", // Adjust for medium screens
-                    lg: "calc(38% - 20px)", // Adjust for large screens
+                    md: "calc(38% - 20px)", // Adjust for medium screens
                   },
                   "&:hover .hoverContent": {
                     height: "85%",
@@ -513,7 +506,7 @@ function OurProjects() {
                       marginTop: "28px",
                     }}
                   >
-                    Transportation
+                    Warehousing Optimization
                   </Typography>
                   <Typography
                     variant="h4"
@@ -529,7 +522,7 @@ function OurProjects() {
                       textAlign: "center",
                     }}
                   >
-                    Customs Clearance Excellence
+                    Efficient Storage and Distribution
                   </Typography>
                   <Typography
                     sx={{
@@ -541,8 +534,7 @@ function OurProjects() {
                       textAlign: "center",
                     }}
                   >
-                    Explore our case studies achievements to see how we have
-                    transformed.
+                    Learn how we have streamlined inventory management and reduced costs for our clients through advanced warehousing solutions.
                   </Typography>
                 </Box>
               </Box>
@@ -553,7 +545,6 @@ function OurProjects() {
               gap={1}
               alignItems={"center"}
               sx={{ width: "100%" }}
-
             >
               <Box
                 ref={image4Ref}
@@ -648,7 +639,7 @@ function OurProjects() {
                       marginTop: "22px",
                     }}
                   >
-                    Transportation
+                    Last-Mile Delivery
                   </Typography>
                   <Typography
                     variant="h4"
@@ -664,7 +655,7 @@ function OurProjects() {
                       textAlign: "center",
                     }}
                   >
-                    Customs Clearance Excellence
+                    On-Time Every Time
                   </Typography>
                   <Typography
                     sx={{
@@ -676,8 +667,7 @@ function OurProjects() {
                       textAlign: "center",
                     }}
                   >
-                    Explore our case studies achievements to see how we have
-                    transformed.
+                    Explore how we ensure timely and reliable deliveries to the final destination, enhancing customer satisfaction.
                   </Typography>
                 </Box>
               </Box>
@@ -774,7 +764,7 @@ function OurProjects() {
                       marginTop: "22px",
                     }}
                   >
-                    Transportation
+                    Supply Chain Integration
                   </Typography>
                   <Typography
                     variant="h4"
@@ -790,7 +780,7 @@ function OurProjects() {
                       textAlign: "center",
                     }}
                   >
-                    Customs Clearance Excellence
+                    End-to-End Visibility
                   </Typography>
                   <Typography
                     sx={{
@@ -802,8 +792,7 @@ function OurProjects() {
                       textAlign: "center",
                     }}
                   >
-                    Explore our case studies achievements to see how we have
-                    transformed.
+                    Discover how we connect every link in the supply chain to deliver seamless and transparent logistics solutions.
                   </Typography>
                 </Box>
               </Box>
